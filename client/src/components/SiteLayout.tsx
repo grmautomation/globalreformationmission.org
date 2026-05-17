@@ -85,7 +85,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </div>
-        <div className="border-t border-[var(--steel)]/20 py-5 text-center text-sm text-[var(--steel)]">© Global Reformation Mission. Website mockup prepared for review.</div>
+        <div className="border-t border-[var(--steel)]/20 py-5 text-center text-sm text-[var(--steel)]">© Global Reformation Mission.</div>
       </footer>
     </div>
   );
