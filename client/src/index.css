@@ -1,0 +1,150 @@
+/*
+ * Design philosophy reminder: Liturgical Editorial Modernism with cartographic mission cues.
+ * Global styles must preserve formal hierarchy, navy/parchment contrast, covenant-gold rules, Mission Blue actions, and restrained motion.
+ */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Source Sans 3", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+:root {
+  --navy: #031B3D;
+  --midnight: #06112A;
+  --parchment: #F7F3E8;
+  --gold: #E5B84B;
+  --mission-blue: #1E9BFF;
+  --steel: #7DA9C7;
+  --ink-soft: #39506C;
+  --primary: oklch(0.64 0.17 249);
+  --primary-foreground: oklch(0.98 0.02 91);
+  --sidebar-primary: oklch(0.64 0.17 249);
+  --sidebar-primary-foreground: oklch(0.98 0.02 91);
+  --chart-1: oklch(0.74 0.13 249);
+  --chart-2: oklch(0.82 0.12 84);
+  --chart-3: oklch(0.43 0.1 258);
+  --chart-4: oklch(0.93 0.03 91);
+  --chart-5: oklch(0.62 0.06 230);
+  --radius: 0.15rem;
+  --background: oklch(0.96 0.025 91);
+  --foreground: oklch(0.22 0.057 258);
+  --card: oklch(0.985 0.017 91);
+  --card-foreground: oklch(0.22 0.057 258);
+  --popover: oklch(0.985 0.017 91);
+  --popover-foreground: oklch(0.22 0.057 258);
+  --secondary: oklch(0.92 0.035 91);
+  --secondary-foreground: oklch(0.23 0.057 258);
+  --muted: oklch(0.91 0.025 91);
+  --muted-foreground: oklch(0.45 0.04 248);
+  --accent: oklch(0.84 0.12 84);
+  --accent-foreground: oklch(0.18 0.06 258);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.79 0.045 225);
+  --input: oklch(0.79 0.045 225);
+  --ring: oklch(0.64 0.17 249);
+  --sidebar: oklch(0.96 0.025 91);
+  --sidebar-foreground: oklch(0.22 0.057 258);
+  --sidebar-accent: oklch(0.91 0.025 91);
+  --sidebar-accent-foreground: oklch(0.18 0.06 258);
+  --sidebar-border: oklch(0.79 0.045 225);
+  --sidebar-ring: oklch(0.64 0.17 249);
+}
+
+.dark {
+  --background: oklch(0.17 0.06 258);
+  --foreground: oklch(0.96 0.025 91);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), [type="button"]:not(:disabled), [type="submit"]:not(:disabled), [type="reset"]:not(:disabled), a[href], select:not(:disabled), input[type="checkbox"]:not(:disabled), input[type="radio"]:not(:disabled) { @apply cursor-pointer; }
+}
+
+@layer components {
+  .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+  .flex { min-height: 0; min-width: 0; }
+  @media (min-width: 640px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+  @media (min-width: 1024px) { .container { padding-left: 2rem; padding-right: 2rem; max-width: 1280px; } }
+  .section { @apply py-20 md:py-28; }
+  .eyebrow { @apply text-xs font-extrabold uppercase tracking-[0.34em]; }
+  .nav-link { @apply px-3 py-2 text-sm font-bold uppercase tracking-[0.14em] text-[var(--steel)] transition hover:text-[var(--parchment)]; }
+  .nav-link-active { @apply text-[var(--gold)]; }
+  .mobile-nav-link { @apply border border-[var(--steel)]/20 px-4 py-3 text-sm font-bold uppercase tracking-[0.18em] text-[var(--steel)]; }
+  .mobile-nav-link-active { @apply border-[var(--gold)]/50 text-[var(--gold)]; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 bg-[var(--mission-blue)] px-5 py-3 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_18px_45px_rgba(30,155,255,0.22)] transition hover:-translate-y-0.5 hover:bg-[#47adff] focus-visible:ring-2 focus-visible:ring-[var(--gold)]; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 border border-[var(--navy)]/30 bg-[var(--parchment)] px-5 py-3 text-sm font-extrabold uppercase tracking-[0.18em] text-[var(--navy)] transition hover:-translate-y-0.5 hover:border-[var(--gold)] hover:bg-white; }
+  .btn-outline-light { @apply inline-flex items-center justify-center gap-2 border border-[var(--gold)]/45 px-5 py-3 text-sm font-extrabold uppercase tracking-[0.18em] text-[var(--parchment)] transition hover:-translate-y-0.5 hover:bg-[var(--gold)] hover:text-[var(--midnight)]; }
+  .btn-ghost-dark { @apply inline-flex items-center gap-2 border border-[var(--steel)]/25 px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[var(--steel)] transition hover:border-[var(--gold)] hover:text-[var(--gold)]; }
+  .hero-panel { @apply border border-[var(--gold)]/30 bg-[var(--parchment)]/10 p-7 shadow-2xl backdrop-blur-md md:p-10; }
+  .hero-fact { @apply flex items-center gap-3 border border-[var(--steel)]/20 bg-[var(--midnight)]/70 p-4 text-sm text-[var(--parchment)]; }
+  .parchment-grid { background-color: var(--parchment); background-image: linear-gradient(rgba(3,27,61,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(3,27,61,.045) 1px, transparent 1px), radial-gradient(circle at 20% 0%, rgba(229,184,75,.13), transparent 28%); background-size: 72px 72px, 72px 72px, auto; }
+  .section-heading { @apply max-w-4xl; }
+  .scripture-card { @apply border border-[var(--gold)]/35 bg-[var(--midnight)] p-8 shadow-2xl md:p-10; }
+  .icon-card { @apply border border-[var(--steel)]/25 bg-white/62 p-6 shadow-[0_22px_60px_rgba(3,27,61,0.08)] transition duration-300 hover:-translate-y-1 hover:border-[var(--gold)]/70 hover:bg-white; }
+  .mission-image { @apply w-full border border-[var(--gold)]/35 object-cover shadow-[0_24px_75px_rgba(3,27,61,0.20)]; }
+  .cta-panel { @apply border border-[var(--gold)]/25 bg-white/5 p-8 backdrop-blur; }
+  .footer-heading { @apply text-xs font-extrabold uppercase tracking-[0.28em] text-[var(--gold)]; }
+  .footer-link { @apply text-[var(--steel)] transition hover:text-[var(--gold)]; }
+  .info-card { @apply border border-[var(--steel)]/30 bg-white/70 p-7 shadow-[0_18px_45px_rgba(3,27,61,0.07)]; }
+  .info-card h3 { @apply mt-6 font-serif text-3xl font-semibold text-[var(--navy)]; }
+  .info-card p { @apply mt-3 leading-7 text-[var(--ink-soft)]; }
+  .hover-card { @apply block transition hover:-translate-y-1 hover:border-[var(--gold)] hover:bg-white; }
+  .prose-panel-dark { @apply border border-[var(--gold)]/25 bg-white/5 p-8 text-lg leading-8 text-[var(--steel)]; }
+  .quote-ledger { @apply border-l-4 border-[var(--gold)] bg-white/70 p-8 font-serif text-3xl leading-tight text-[var(--navy)] shadow-[0_20px_55px_rgba(3,27,61,0.08)]; }
+  .dark-stat { @apply border border-[var(--gold)]/25 bg-white/5 p-7; }
+  .dark-stat span { @apply text-xs font-extrabold uppercase tracking-[0.3em] text-[var(--gold)]; }
+  .dark-stat h3 { @apply mt-5 font-serif text-3xl leading-tight; }
+  .dark-stat p { @apply mt-4 leading-7 text-[var(--steel)]; }
+  .teaching-card, .video-card { @apply overflow-hidden border border-[var(--steel)]/30 bg-white/75 shadow-[0_20px_55px_rgba(3,27,61,0.08)]; }
+  .teaching-thumb { @apply flex aspect-video items-center justify-between bg-[var(--midnight)] p-7 text-[var(--gold)]; }
+  .teaching-thumb span { @apply text-xs font-extrabold uppercase tracking-[0.35em]; }
+  .stream-frame { @apply overflow-hidden border border-[var(--gold)]/35 bg-black shadow-2xl; }
+  .stream-aside { @apply border border-[var(--gold)]/25 bg-white/5 p-8 backdrop-blur; }
+}
+
+@layer utilities {
+  .opacity-34 { opacity: .34; }
+}
