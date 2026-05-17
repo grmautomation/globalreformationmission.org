@@ -26,7 +26,7 @@ export const missionPillars = [
 
 export const pathways = [
   { title: "Pray", copy: "Intercede for gospel clarity, faithful churches, trained disciples, and open doors for mission.", icon: Compass },
-  { title: "Give", copy: "Support the work through responsible partnership pathways as the mission confirms giving details.", icon: HandHeart },
+  { title: "Give", copy: "Support the work through faithful stewardship. Every gift advances the proclamation of the gospel.", icon: HandHeart },
   { title: "Go", copy: "Move from conviction to embodied service through discipleship, local witness, and mission readiness.", icon: MapPin },
   { title: "Send", copy: "Strengthen church planting, teaching, and leadership formation through sustained partnership.", icon: Church },
 ];

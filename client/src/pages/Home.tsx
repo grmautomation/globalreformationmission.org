@@ -16,7 +16,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--midnight)] via-[var(--midnight)]/88 to-[var(--navy)]/50" />
         <div className="container relative grid min-h-[calc(100vh-5rem)] items-center gap-12 py-20 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <p className="eyebrow text-[var(--gold)]">Website UX Mission Mockup</p>
             <h1 className="mt-5 max-w-4xl font-serif text-6xl font-semibold leading-[0.9] tracking-[-0.04em] md:text-8xl">Reformed in conviction. Missionary in movement.</h1>
             <p className="mt-7 max-w-2xl text-xl leading-9 text-[var(--steel)]">Global Reformation Mission exists to plant and strengthen Bible-centered churches that equip the saints, reach the lost, and transform communities for the glory of God.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -25,13 +24,11 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-panel">
-            <p className="eyebrow text-[var(--gold)]">Core Message</p>
             <blockquote className="mt-5 font-serif text-3xl leading-tight md:text-5xl">“Equipping the saints. Reaching the lost. Transforming communities.”</blockquote>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               <div className="hero-fact"><Radio className="h-5 w-5 text-[var(--mission-blue)]" /><span>Sundays at 15:00</span></div>
               <div className="hero-fact"><MapPin className="h-5 w-5 text-[var(--mission-blue)]" /><span>29 Forest St, Lewiston, ME 04240</span></div>
             </div>
-            <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[var(--steel)]">Confirmed address for local gatherings and visit planning.</p>
           </div>
         </div>
       </section>
@@ -39,7 +36,7 @@ export default function Home() {
       <section className="section parchment-grid">
         <div className="container">
           <SectionHeading kicker="01 / Mission Pillars" title="A serious mission requires a clear foundation.">
-            The style system names five anchors for the work: Word, Grace, Community, Mission, and Glory. These form the main teaching and discipleship vocabulary across the website.
+            Scripture anchors this ministry in five convictions: the authority of God's Word, salvation by grace, the fellowship of the church, the call to make disciples, and the glory of God in all things.
           </SectionHeading>
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
             {missionPillars.map((pillar) => <IconCard key={pillar.title} {...pillar} />)}
@@ -52,7 +49,7 @@ export default function Home() {
           <ScriptureCard quote="All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness." reference="2 Timothy 3:16–17" />
           <div>
             <SectionHeading dark kicker="02 / Teaching Stream" title="A channel for teaching, training, and discipleship.">
-              The streaming page gathers recent public videos from the YouTube channel and gives visitors a clear path to the complete channel archive.
+              Scripture equips the people of God for every good work. These public teachings are gathered here for formation, reproof, correction, and training in righteousness.
             </SectionHeading>
             <div className="mt-8 overflow-hidden border border-[var(--gold)]/35 bg-black/30 shadow-2xl">
               <iframe className="aspect-video w-full" src={youtubeEmbed(featured.id)} title={featured.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
@@ -70,7 +67,7 @@ export default function Home() {
           <img src={assets.missionMap} alt="Abstract missionary pathway map" className="mission-image" />
           <div>
             <SectionHeading kicker="03 / Partnership Pathways" title="Pray, give, go, and send with clarity.">
-              The website frames partnership as concrete participation in a mission to plant and strengthen Bible-centered churches.
+              The mission advances through the prayers, giving, going, and sending of the church. Every believer has a part in planting and strengthening Bible-centered churches.
             </SectionHeading>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {pathways.map((path) => <IconCard key={path.title} {...path} />)}
@@ -86,7 +83,7 @@ export default function Home() {
             <h2 className="mt-4 font-serif text-5xl leading-none md:text-7xl">From conviction to invitation.</h2>
           </div>
           <div className="cta-panel">
-            <p className="text-lg leading-8 text-[var(--steel)]">Explore the mission, review teachings, connect through the social channels, or move toward partnership. Each path is designed to reduce ambiguity and support faithful next steps.</p>
+            <p className="text-lg leading-8 text-[var(--steel)]">Explore the mission, review the teachings, connect through the social channels, or inquire about partnership. Each path leads deeper into the work of the gospel.</p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row"><Link href="/connect" className="btn-primary"><Send className="h-4 w-4" /> Connect</Link><Link href="/mission" className="btn-outline-light">Explore Mission</Link></div>
           </div>
         </div>

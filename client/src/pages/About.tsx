@@ -9,14 +9,14 @@ export default function About() {
   return (
     <>
       <PageHero kicker="About" title="A ministry identity with weight and welcome." image={assets.hero} cta={{ href: "/mission", label: "Explore the Mission" }}>
-        Global Reformation Mission is presented through a disciplined identity: biblical authority, local hospitality, global church-planting vision, and clear pathways for worship, partnership, and giving.
+        Global Reformation Mission is committed to biblical authority, local hospitality, global church-planting vision, and clear pathways for worship, partnership, and giving.
       </PageHero>
       <section className="section parchment-grid">
         <div className="container grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <SectionHeading kicker="01 / Positioning" title="Planting and strengthening Bible-centered churches.">
-            The style guide states the mission plainly: equipping the saints, reaching the lost, and transforming communities for the glory of God. The website should make that logic easy to understand and act on.
+            The mission is clear: equipping the saints, reaching the lost, and transforming communities for the glory of God. Everything flows from this calling.
           </SectionHeading>
-          <div className="quote-ledger"><p>“Global Reformation Mission exists to plant and strengthen Bible-centered churches that equip the saints, reach the lost, and transform communities for the glory of God.”</p></div>
+          <div className="quote-ledger"><p>"Global Reformation Mission exists to plant and strengthen Bible-centered churches that equip the saints, reach the lost, and transform communities for the glory of God."</p></div>
         </div>
       </section>
       <section className="section bg-[var(--parchment)]">
