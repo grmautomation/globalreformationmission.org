@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className="mt-5 max-w-4xl font-serif text-6xl font-semibold leading-[0.9] tracking-[-0.04em] md:text-8xl">Reformed in conviction. Missionary in movement.</h1>
             <p className="mt-7 max-w-2xl text-xl leading-9 text-[var(--steel)]">Global Reformation Mission exists to plant and strengthen Bible-centered churches that equip the saints, reach the lost, and transform communities for the glory of God.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/stream" className="btn-primary"><Play className="h-4 w-4" /> Watch Teachings</Link>
+              <Link href="/stream" className="btn-primary"><Play className="h-4 w-4" /> Watch Teaching</Link>
               <Link href="/visit" className="btn-outline-light">Plan a Visit <ArrowRight className="h-4 w-4" /></Link>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function Home() {
           <ScriptureCard quote="All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness." reference="2 Timothy 3:16–17" />
           <div>
             <SectionHeading dark kicker="02 / Teaching Stream" title="A channel for teaching, training, and discipleship.">
-              Scripture equips the people of God for every good work. These public teachings are gathered here for formation, reproof, correction, and training in righteousness.
+              Scripture equips the people of God for every good work. These teachings are gathered here for formation, reproof, correction, and training in righteousness.
             </SectionHeading>
             <div className="mt-8 overflow-hidden border border-[var(--gold)]/35 bg-black/30 shadow-2xl">
               <iframe className="aspect-video w-full" src={youtubeEmbed(featured.id)} title={featured.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
@@ -83,7 +83,7 @@ export default function Home() {
             <h2 className="mt-4 font-serif text-5xl leading-none md:text-7xl">From conviction to invitation.</h2>
           </div>
           <div className="cta-panel">
-            <p className="text-lg leading-8 text-[var(--steel)]">Explore the mission, review the teachings, connect through the social channels, or inquire about partnership. Each path leads deeper into the work of the gospel.</p>
+            <p className="text-lg leading-8 text-[var(--steel)]">Explore the mission, review the teaching, connect through the social channels, or inquire about partnership. Each path leads deeper into the work of the gospel.</p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row"><Link href="/connect" className="btn-primary"><Send className="h-4 w-4" /> Connect</Link><Link href="/mission" className="btn-outline-light">Explore Mission</Link></div>
           </div>
         </div>

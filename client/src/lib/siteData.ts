@@ -42,7 +42,7 @@ export const navItems = [
   { href: "/visit", label: "Visit" },
   { href: "/about", label: "About" },
   { href: "/mission", label: "Mission" },
-  { href: "/teachings", label: "Teachings" },
+  { href: "/teachings", label: "Teaching" },
   { href: "/stream", label: "Stream" },
   { href: "/give", label: "Give" },
   { href: "/connect", label: "Connect" },

@@ -10,7 +10,7 @@ import { assets, videos, youtubeWatch } from "@/lib/siteData";
 export default function Teachings() {
   return (
     <>
-      <PageHero kicker="Teachings" title="Scripture-centered teaching for discipleship." image={assets.streamPanel} cta={{ href: "/stream", label: "Open Streaming Hub" }}>
+      <PageHero kicker="Teaching" title="Scripture-centered teaching for discipleship." image={assets.streamPanel} cta={{ href: "/stream", label: "Open Streaming Hub" }}>
         Teaching is central to the mission because Scripture equips the people of God for faithful witness, correction, maturity, and every good work.
       </PageHero>
       <section className="section parchment-grid">

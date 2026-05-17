@@ -10,7 +10,7 @@ export default function Connect() {
   return (
     <>
       <PageHero kicker="Connect" title="Clear pathways for conversation and updates." image={assets.hero}>
-        Follow the mission's official channels, watch teachings, and reach out through the public platforms listed below.
+        Follow the mission's official channels, watch teaching, and reach out through the public platforms listed below.
       </PageHero>
       <section className="section parchment-grid">
         <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">

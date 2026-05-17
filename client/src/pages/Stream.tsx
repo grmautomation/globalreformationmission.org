@@ -10,8 +10,8 @@ export default function Stream() {
   const featured = videos[0];
   return (
     <>
-      <PageHero kicker="Streaming" title="Watch teachings from Global Reformation Mission." image={assets.streamPanel}>
-        Browse public teachings from the mission's YouTube channel. For the latest uploads and live availability, visit the channel directly.
+      <PageHero kicker="Streaming" title="Watch teaching from Global Reformation Mission." image={assets.streamPanel}>
+        Browse teaching from the mission's YouTube channel. For the latest uploads and live availability, visit the channel directly.
       </PageHero>
       <section className="section bg-[var(--midnight)] text-[var(--parchment)]">
         <div className="container grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
@@ -26,7 +26,7 @@ export default function Stream() {
       </section>
       <section className="section parchment-grid">
         <div className="container">
-          <SectionHeading kicker="01 / Recent Channel Videos" title="Current public teachings." />
+          <SectionHeading kicker="01 / Recent Channel Videos" title="Current teaching." />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {videos.map((video) => <article className="video-card" key={video.id}><iframe className="aspect-video w-full" src={youtubeEmbed(video.id)} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /><div className="p-5"><p className="eyebrow text-[var(--steel)]">{video.duration} &bull; {video.age}</p><h3 className="mt-2 font-serif text-2xl leading-tight">{video.title}</h3><a href={youtubeWatch(video.id)} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-[var(--mission-blue)]">Open video <ExternalLink className="h-4 w-4" /></a></div></article>)}
           </div>
