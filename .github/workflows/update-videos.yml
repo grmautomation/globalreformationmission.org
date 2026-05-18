@@ -1,0 +1,40 @@
+name: Update Videos from YouTube RSS
+
+on:
+  schedule:
+    # Every 6 hours — YouTube doesn't publish more frequently than that
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # Allow manual trigger too
+
+jobs:
+  update-videos:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./site-source
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+          cache-dependency-path: ./site-source/pnpm-lock.yaml
+
+      - name: Fetch latest videos from YouTube RSS
+        run: node scripts/fetch-latest-videos.mjs
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet client/src/lib/siteData.ts && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if updated
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "GRM Automation"
+          git config user.email "automation@globalreformation.org"
+          git add client/src/lib/siteData.ts
+          git commit -m "Auto-update videos from YouTube RSS feed"
+          git push

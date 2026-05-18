@@ -32,9 +32,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: "Exode 13:17-18! 3", duration: "40:30", views: "6", age: "Streamed 4 hours ago", id: "jWkMvPZ60_Y" },
-  { title: "L'Eglise(Assemblée)! 9", duration: "59:00", views: "10", age: "Streamed 6 hours ago", id: "WXv0Sr1yiN8" },
-  { title: "La femme sage bâtit sa maison! 22", duration: "56:25", views: "25", age: "Streamed 1 day ago", id: "2XSjWE8FLpg" },
+  { title: 'Exode 13:17-18! 3', age: 'Streamed 6 hours ago', id: 'jWkMvPZ60_Y' },
+  { title: 'La femme sage batit sa maison! 22', age: 'Streamed 6 hours ago', id: 'Wa_v0sSXimI' },
+  { title: 'L’Eglise(Assemblée)! 9', age: 'Streamed 8 hours ago', id: 'WXv0Sr1yiN8' },
 ];
 
 export const navItems = [

@@ -20,7 +20,7 @@ export default function Teachings() {
             {videos.map((video, index) => (
               <article className="teaching-card" key={video.id}>
                 <div className="teaching-thumb"><span>0{index + 1}</span><Play className="h-8 w-8" /></div>
-                <div className="p-6"><p className="eyebrow text-[var(--steel)]">{video.duration} &bull; {video.age}</p><h3 className="mt-3 font-serif text-3xl leading-tight">{video.title}</h3><p className="mt-4 text-[var(--ink-soft)]">Available on the mission's YouTube channel.</p><a className="btn-secondary mt-6 inline-flex" href={youtubeWatch(video.id)} target="_blank" rel="noreferrer">Watch on YouTube</a></div>
+                <div className="p-6"><p className="eyebrow text-[var(--steel)]">{video.age}</p><h3 className="mt-3 font-serif text-3xl leading-tight">{video.title}</h3><p className="mt-4 text-[var(--ink-soft)]">Available on the mission's YouTube channel.</p><a className="btn-secondary mt-6 inline-flex" href={youtubeWatch(video.id)} target="_blank" rel="noreferrer">Watch on YouTube</a></div>
               </article>
             ))}
           </div>

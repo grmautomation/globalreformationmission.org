@@ -19,7 +19,6 @@ export default function Stream() {
           <aside className="stream-aside">
             <p className="eyebrow text-[var(--gold)]">Featured Teaching</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight">{featured.title}</h2>
-            <p className="mt-5 text-[var(--steel)]">Duration: {featured.duration}.</p>
             <div className="mt-7 grid gap-3"><a className="btn-primary" href={youtubeWatch(featured.id)} target="_blank" rel="noreferrer"><Play className="h-4 w-4" /> Watch on YouTube</a><a className="btn-outline-light" href={socialLinks.youtube} target="_blank" rel="noreferrer"><ExternalLink className="h-4 w-4" /> Open Channel</a></div>
           </aside>
         </div>
@@ -28,7 +27,7 @@ export default function Stream() {
         <div className="container">
           <SectionHeading kicker="01 / Recent Channel Videos" title="Current teaching." />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {videos.map((video) => <article className="video-card" key={video.id}><iframe className="aspect-video w-full" src={youtubeEmbed(video.id)} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /><div className="p-5"><p className="eyebrow text-[var(--steel)]">{video.duration} &bull; {video.age}</p><h3 className="mt-2 font-serif text-2xl leading-tight">{video.title}</h3><a href={youtubeWatch(video.id)} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-[var(--mission-blue)]">Open video <ExternalLink className="h-4 w-4" /></a></div></article>)}
+            {videos.map((video) => <article className="video-card" key={video.id}><iframe className="aspect-video w-full" src={youtubeEmbed(video.id)} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /><div className="p-5"><p className="eyebrow text-[var(--steel)]">{video.age}</p><h3 className="mt-2 font-serif text-2xl leading-tight">{video.title}</h3><a href={youtubeWatch(video.id)} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-[var(--mission-blue)]">Open video <ExternalLink className="h-4 w-4" /></a></div></article>)}
           </div>
         </div>
       </section>
