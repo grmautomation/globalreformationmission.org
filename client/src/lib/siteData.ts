@@ -32,9 +32,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: "Ne Retournez pas a L'esclavage!", duration: "45:22", views: "75", age: "4 months ago", id: "0O42GH5dOvE" },
-  { title: "La femme selon le coeur de Dieu 2", duration: "56:46", views: "79", age: "5 months ago", id: "VEAOf_2sIoU" },
-  { title: "La femme selon le coeur de Dieu 1", duration: "48:36", views: "252", age: "5 months ago", id: "7Ni1Z8WLAII" },
+  { title: "Exode 13:17-18! 3", duration: "40:30", views: "6", age: "Streamed 4 hours ago", id: "jWkMvPZ60_Y" },
+  { title: "L'Eglise(Assemblée)! 9", duration: "59:00", views: "10", age: "Streamed 6 hours ago", id: "WXv0Sr1yiN8" },
+  { title: "La femme sage bâtit sa maison! 22", duration: "56:25", views: "25", age: "Streamed 1 day ago", id: "2XSjWE8FLpg" },
 ];
 
 export const navItems = [
