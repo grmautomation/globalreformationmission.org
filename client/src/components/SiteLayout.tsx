@@ -18,12 +18,8 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       </a>
       <header className="sticky top-0 z-40 border-b border-[var(--steel)]/25 bg-[var(--midnight)]/95 text-[var(--parchment)] backdrop-blur-xl">
         <div className="container flex min-h-20 items-center justify-between gap-4 py-3">
-          <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-            <span className="grid h-11 w-11 place-items-center border border-[var(--gold)]/70 bg-[var(--navy)] text-[var(--gold)] transition group-hover:bg-[var(--gold)] group-hover:text-[var(--midnight)]">✦</span>
-            <span className="leading-tight">
-              <span className="block font-serif text-xl font-semibold tracking-wide">Global Reformation</span>
-              <span className="block text-[0.67rem] font-bold uppercase tracking-[0.36em] text-[var(--steel)]">Mission</span>
-            </span>
+          <Link href="/" className="group flex items-center" onClick={() => setOpen(false)}>
+            <img src="/logo.png" alt="Global Reformation Mission" className="h-12 w-auto" />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
