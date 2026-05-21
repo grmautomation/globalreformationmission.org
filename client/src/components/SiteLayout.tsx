@@ -88,7 +88,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         <div className="border-t border-[var(--steel)]/20 py-5 text-center text-sm text-[var(--steel)]">
           <div className="container flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
             <span>© Global Reformation Mission.</span>
-            <img src="/affiliation-badge.png" alt="Send Network affiliation badge" className="h-8 w-auto opacity-70 transition-opacity hover:opacity-100" />
+            <a href="https://www.sendnetwork.com/" target="_blank" rel="noreferrer"><img src="/affiliation-badge.png" alt="Send Network affiliation badge" className="h-8 w-auto opacity-70 transition-opacity hover:opacity-100" /></a>
           </div>
         </div>
       </footer>
