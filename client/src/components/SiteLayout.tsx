@@ -85,7 +85,12 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </div>
-        <div className="border-t border-[var(--steel)]/20 py-5 text-center text-sm text-[var(--steel)]">© Global Reformation Mission.</div>
+        <div className="border-t border-[var(--steel)]/20 py-5 text-center text-sm text-[var(--steel)]">
+          <div className="container flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+            <span>© Global Reformation Mission.</span>
+            <img src="/affiliation-badge.jpg" alt="Network affiliation badge" className="h-6 w-auto opacity-70 transition-opacity hover:opacity-100" />
+          </div>
+        </div>
       </footer>
     </div>
   );
