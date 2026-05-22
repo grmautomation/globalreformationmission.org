@@ -9,6 +9,8 @@ on:
 jobs:
   update-videos:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     defaults:
       run:
         working-directory: ./site-source
@@ -18,9 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: "pnpm"
-          cache-dependency-path: ./site-source/pnpm-lock.yaml
+          node-version: 22
 
       - name: Fetch latest videos from YouTube RSS
         run: node scripts/fetch-latest-videos.mjs
