@@ -46,6 +46,7 @@ export const navItems = [
   { href: "/stream", label: "Stream" },
   { href: "/give", label: "Give" },
   { href: "/connect", label: "Connect" },
+  { href: "/devotions", label: "Devotions" },
 ];
 
 export const youtubeEmbed = (id: string) => "https://www.youtube.com/embed/" + id;

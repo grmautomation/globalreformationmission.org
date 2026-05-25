@@ -10,6 +10,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import SiteLayout from "./components/SiteLayout";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
+import Devotions from "./pages/Devotions";
 import Give from "./pages/Give";
 import Home from "./pages/Home";
 import Mission from "./pages/Mission";
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/stream" component={Stream} />
         <Route path="/give" component={Give} />
         <Route path="/connect" component={Connect} />
+        <Route path="/devotions" component={Devotions} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
