@@ -43,6 +43,11 @@ export default function Devotions() {
   const switchLang = (newLang: string) => {
     setLang(newLang);
     document.documentElement.lang = newLang;
+    // Update data-ch-lang attributes synchronously before dispatching event,
+    // so widget's resolveLang() reads the correct value immediately
+    document.querySelectorAll("[data-ch-audio], [data-ch-devotional]").forEach((el) => {
+      el.setAttribute("data-ch-lang", newLang);
+    });
     document.dispatchEvent(new CustomEvent("ch-lang-change"));
   };
 
