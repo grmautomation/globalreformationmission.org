@@ -143,7 +143,7 @@ export default function Devotions() {
             rel="noreferrer"
             className="btn-primary inline-flex shrink-0"
           >
-            Visit Christ Himself
+            Visit Devotional Website
           </a>
         </div>
       </section>
