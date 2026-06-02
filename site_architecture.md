@@ -27,10 +27,23 @@ The site will use verified language from the style guide and the public YouTube 
 
 | Element | Implementation | Notes |
 |---|---|---|
-| Featured video | YouTube iframe embed using a public video ID from the visible channel page | No claim that this is live unless the channel confirms it |
-| Recent teachings | Three visible public videos from the channel | Uses public title, duration, and video ID where available |
+| Featured video | YouTube iframe embed from live API data | First of 4 fetched videos |
+| Recent teachings | Three visible public videos (videos[1..3] from API data) | Skips featured to avoid duplication |
 | Channel actions | Buttons to YouTube channel and Facebook page | User-provided links |
-| Streaming disclaimer | “For the latest uploads and live availability, open the YouTube channel.” | Avoids overclaiming dynamic API access |
+| Streaming disclaimer | "For the latest uploads and live availability, open the YouTube channel." | Avoids overclaiming dynamic access |
+
+## Video data pipeline
+
+Videos are sourced from the YouTube Data API v3 via a GitHub Actions workflow:
+
+- **Schedule:** Every 6 hours (`0 */6 * * *`)
+- **Endpoint:** `search?part=snippet&channelId=UC5TzLV6MqV7JB7rdvdOtqpA&order=date&maxResults=4&type=video`
+- **Script:** `scripts/fetch-latest-videos.mjs`
+- **Secret:** `YOUTUBE_API_KEY` (repo secret)
+- **Output:** Updates `client/src/lib/siteData.ts` → `videos[]`
+- **Why not RSS:** YouTube RSS feed was returning stale/out-of-order entries. The API returns accurate chronological data.
+
+Previously used the YouTube RSS feed (`/feeds/videos.xml`) which was unreliable — the first entry was often months out of order. Migrated to API v3 for correctness.
 
 ## Visual system
 
