@@ -77,7 +77,7 @@ export default function Devotions() {
       <section className="section parchment-grid">
         <div className="container">
           <SectionHeading
-            kicker="01 / Today's Reading"
+            kicker="01 / Today's Devotional"
             title="Listen and read the daily devotional."
           >
             Each entry begins with a theme verse, followed by supporting scriptures,

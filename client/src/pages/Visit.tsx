@@ -20,7 +20,7 @@ export default function Visit() {
           <div className="grid gap-5 md:grid-cols-3">
             <div className="info-card"><Radio className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Gathering</h3><p>Sundays at 15:00.</p></div>
             <div className="info-card"><MapPin className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Location</h3><p>29 Forest St, Lewiston, ME 04240.</p></div>
-            <div className="info-card"><Mail className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Contact</h3><p>Reach out through the connect page or social channels if you have questions before attending.</p></div>
+            <div className="info-card"><Mail className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Contact</h3><p>Reach out through the <a href="/connect" className="underline decoration-[var(--gold)]/50 hover:decoration-[var(--gold)]">connect page</a> or <a href={socialLinks.facebook} target="_blank" rel="noreferrer" className="underline decoration-[var(--gold)]/50 hover:decoration-[var(--gold)]">social channels</a> if you have questions before attending.</p></div>
           </div>
         </div>
       </section>
