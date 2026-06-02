@@ -16,7 +16,7 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const API_URL = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=3&type=video&key=${API_KEY}`;
+const API_URL = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=4&type=video&key=${API_KEY}`;
 const SITE_DATA_PATH = new URL("../client/src/lib/siteData.ts", import.meta.url);
 
 function relativeAge(isoDate) {

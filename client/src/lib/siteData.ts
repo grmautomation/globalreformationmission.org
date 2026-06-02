@@ -35,6 +35,7 @@ export const videos = [
   { title: 'Genèse 11:1-9! 2', age: 'Streamed 1 day ago', id: '1-69hoONLO8' },
   { title: 'L’Eglise(l’Assemblée)! 11', age: 'Streamed 1 day ago', id: 'VcBwXCiNJhc' },
   { title: 'L’Eglise(l’Assemblée)! 11', age: 'Streamed 1 day ago', id: 'fxHuhmACuLU' },
+  { title: 'La femme sage bâtit sa maison! 24', age: 'Streamed 2 days ago', id: 'SsBQVm5WT2I' },
 ];
 
 export const navItems = [
