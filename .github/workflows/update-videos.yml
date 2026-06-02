@@ -1,19 +1,16 @@
-name: Update Videos from YouTube RSS
+name: Update Videos from YouTube
 
 on:
   schedule:
-    # Every 6 hours — YouTube doesn't publish more frequently than that
     - cron: "0 */6 * * *"
-  workflow_dispatch: # Allow manual trigger too
+  workflow_dispatch:
 
 jobs:
   update-videos:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    defaults:
-      run:
-        working-directory: ./site-source
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
     steps:
       - uses: actions/checkout@v4
@@ -22,7 +19,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Fetch latest videos from YouTube RSS
+      - name: Fetch latest videos from YouTube API
         run: node scripts/fetch-latest-videos.mjs
 
       - name: Check for changes
@@ -36,5 +33,5 @@ jobs:
           git config user.name "GRM Automation"
           git config user.email "automation@globalreformation.org"
           git add client/src/lib/siteData.ts
-          git commit -m "Auto-update videos from YouTube RSS feed"
+          git commit -m "Auto-update videos from YouTube API"
           git push

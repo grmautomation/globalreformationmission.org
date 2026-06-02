@@ -2,15 +2,21 @@
 
 /**
  * Fetches the latest 3 videos from the Global Reformation Mission YouTube channel
- * via the YouTube RSS feed (no API key needed).
+ * via the YouTube Data API v3 (requires YOUTUBE_API_KEY env var).
  *
- * Usage: node scripts/fetch-latest-videos.mjs
+ * Usage: YOUTUBE_API_KEY=... node scripts/fetch-latest-videos.mjs
  *
  * Updates client/src/lib/siteData.ts with the fresh data.
  */
 
 const CHANNEL_ID = "UC5TzLV6MqV7JB7rdvdOtqpA";
-const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const API_KEY = process.env.YOUTUBE_API_KEY;
+if (!API_KEY) {
+  console.error("YOUTUBE_API_KEY environment variable is required");
+  process.exit(1);
+}
+
+const API_URL = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=3&type=video&key=${API_KEY}`;
 const SITE_DATA_PATH = new URL("../client/src/lib/siteData.ts", import.meta.url);
 
 function relativeAge(isoDate) {
@@ -29,57 +35,33 @@ function relativeAge(isoDate) {
   return `Streamed ${diffMonths} month${diffMonths === 1 ? "" : "s"} ago`;
 }
 
-function parseRSS(xmlText) {
-  const entries = [];
-  const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
-  let match;
-
-  while ((match = entryRegex.exec(xmlText)) !== null) {
-    const entryXml = match[1];
-    const idMatch = entryXml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/);
-    const titleMatch = entryXml.match(/<title>([^<]*)<\/title>/);
-    const publishedMatch = entryXml.match(/<published>([^<]+)<\/published>/);
-
-    if (idMatch && titleMatch) {
-      entries.push({
-        id: idMatch[1],
-        title: titleMatch[1]
-          .replace(/&amp;/g, "&")
-          .replace(/&lt;/g, "<")
-          .replace(/&gt;/g, ">")
-          .replace(/&quot;/g, '"')
-          .replace(/&#39;/g, "'"),
-        published: publishedMatch ? publishedMatch[1] : null,
-      });
-    }
-  }
-
-  return entries;
-}
-
 async function main() {
-  console.log(`Fetching RSS feed: ${RSS_URL}`);
-  const response = await fetch(RSS_URL);
+  console.log(`Fetching videos via YouTube Data API for channel ${CHANNEL_ID}`);
+  const response = await fetch(API_URL);
 
   if (!response.ok) {
-    console.error(`Failed to fetch RSS feed: ${response.status} ${response.statusText}`);
+    const body = await response.text();
+    console.error(`YouTube API error: ${response.status} ${response.statusText}`);
+    console.error(body);
     process.exit(1);
   }
 
-  const xmlText = await response.text();
-  const entries = parseRSS(xmlText);
+  const data = await response.json();
 
-  if (entries.length === 0) {
-    console.error("No entries found in RSS feed");
+  if (!data.items || data.items.length === 0) {
+    console.error("No videos found in API response");
     process.exit(1);
   }
 
-  // Take the top 3
-  const top3 = entries.slice(0, 3);
+  const top3 = data.items.map((item) => ({
+    id: item.id.videoId,
+    title: item.snippet.title,
+    published: item.snippet.publishedAt,
+  }));
 
-  console.log(`Found ${entries.length} videos, taking top 3:\n`);
+  console.log(`Found ${data.items.length} videos:\n`);
   top3.forEach((v, i) => {
-    console.log(`  ${i + 1}. ${v.title} (${v.id}) — ${v.published ?? "unknown date"}`);
+    console.log(`  ${i + 1}. ${v.title} (${v.id}) — ${v.published}`);
   });
 
   // Generate the new videos array as a string
