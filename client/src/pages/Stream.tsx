@@ -5,11 +5,13 @@
 import { ExternalLink, Play } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, socialLinks, videos, youtubeEmbed, youtubeWatch } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Stream() {
   const featured = videos[0];
   return (
     <>
+      <SEO title="Stream" description="Watch live and recorded teachings from Global Reformation Mission. Scripture-based preaching and discipleship content." path="/stream" />
       <PageHero kicker="Streaming" title="Watch teaching from Global Reformation Mission." image={assets.streamPanel}>
         Browse teaching from the mission's YouTube channel. For the latest uploads and live availability, visit the channel directly.
       </PageHero>

@@ -5,10 +5,12 @@
 import { Mail, MapPin, Radio } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, socialLinks } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Visit() {
   return (
     <>
+      <SEO title="Visit" description="Join us for worship at 29 Forest St, Lewiston, ME 04240 — Sundays at 15:00. All are welcome at Global Reformation Mission." path="/visit" />
       <PageHero kicker="Visit" title="Local hospitality under biblical authority." image={assets.visit} cta={{ href: "/connect", label: "Ask a Question" }}>
         Global Reformation Mission welcomes guests to gather for worship, Scripture, and fellowship at the time and place confirmed below.
       </PageHero>

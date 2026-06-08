@@ -6,11 +6,13 @@ import { ArrowRight, MapPin, Play, Radio, Send } from "lucide-react";
 import { Link } from "wouter";
 import { IconCard, ScriptureCard, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, missionPillars, pathways, socialLinks, videos, youtubeEmbed } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Home() {
   const featured = videos[0];
   return (
     <>
+      <SEO title="Home" description="Reformed in conviction. Missionary in movement. Plant and strengthen Bible-centered churches in Lewiston, ME and beyond." path="/" />
       <section className="hero-shell relative overflow-hidden bg-[var(--midnight)] text-[var(--parchment)]">
         <img src={assets.hero} alt="Abstract navy cartographic sanctuary background" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--midnight)] via-[var(--midnight)]/88 to-[var(--navy)]/50" />

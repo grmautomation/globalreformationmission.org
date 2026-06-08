@@ -6,6 +6,7 @@
 import { useEffect, useState, useRef } from "react";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 const WIDGET_BASE = "https://www.christhimself.com/widgets";
 const WIDGET_SCRIPTS = [
@@ -43,8 +44,6 @@ export default function Devotions() {
   const switchLang = (newLang: string) => {
     setLang(newLang);
     document.documentElement.lang = newLang;
-    // Update data-ch-lang attributes synchronously before dispatching event,
-    // so widget's resolveLang() reads the correct value immediately
     document.querySelectorAll("[data-ch-audio], [data-ch-devotional]").forEach((el) => {
       el.setAttribute("data-ch-lang", newLang);
     });
@@ -64,6 +63,7 @@ export default function Devotions() {
 
   return (
     <>
+      <SEO title="Devotions" description="Daily devotional readings from Global Reformation Mission. Scripture-formed rhythms for Christian growth and reflection." path="/devotions" />
       <PageHero
         kicker="Devotions"
         title="Daily Scripture devotionals. Listen and reflect."

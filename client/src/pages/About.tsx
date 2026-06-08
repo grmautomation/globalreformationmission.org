@@ -4,10 +4,12 @@
  */
 import { IconCard, PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, missionPillars } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function About() {
   return (
     <>
+      <SEO title="About" description="Learn about Global Reformation Mission — our beliefs, mission pillars, and commitment to the authority of God's Word in Lewiston, ME." path="/about" />
       <PageHero kicker="About" title="A ministry identity with weight and welcome." image={assets.hero} cta={{ href: "/mission", label: "Explore the Mission" }}>
         Global Reformation Mission is committed to biblical authority, local hospitality, global church-planting vision, and clear pathways for worship, partnership, and giving.
       </PageHero>

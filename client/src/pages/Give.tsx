@@ -5,10 +5,12 @@
 import { ExternalLink, Shield } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, kofiUrl } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Give() {
   return (
     <>
+      <SEO title="Give" description="Support the mission through generous partnership. Give securely via card or PayPal to advance the gospel through Global Reformation Mission." path="/give" />
       {/*
        * ── Section 1: Conviction ───────────────────────────────
        * Hero: establishes giving as partnership for the gospel.

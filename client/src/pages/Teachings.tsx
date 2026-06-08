@@ -6,10 +6,12 @@ import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, socialLinks, videos, youtubeEmbed, youtubeWatch } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Teachings() {
   return (
     <>
+      <SEO title="Teachings" description="Browse the latest sermons and biblical teachings from Global Reformation Mission. Scripture-centered formation for the Christian life." path="/teachings" />
       <PageHero kicker="Teaching" title="Scripture-centered teaching for discipleship." image={assets.streamPanel} cta={{ href: "/stream", label: "Open Streaming Hub" }}>
         Teaching is central to the mission because Scripture equips the people of God for faithful witness, correction, maturity, and every good work.
       </PageHero>

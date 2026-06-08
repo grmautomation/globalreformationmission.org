@@ -4,10 +4,12 @@
  */
 import { IconCard, PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, pathways } from "@/lib/siteData";
+import SEO from "@/components/SEO";
 
 export default function Mission() {
   return (
     <>
+      <SEO title="Mission" description="Church planting vision from Lewiston to the ends of the earth. Pray, give, go, and send with Global Reformation Mission." path="/mission" />
       <PageHero kicker="Mission" title="Church planting vision with practical next steps." image={assets.missionMap} cta={{ href: "/give", label: "Partner with the Mission" }}>
         The mission advances through prayer, giving, going, and sending. Every believer is called to participate in the work of planting and strengthening churches.
       </PageHero>
@@ -24,7 +26,11 @@ export default function Mission() {
       </section>
       <section className="section bg-[var(--midnight)] text-[var(--parchment)]">
         <div className="container grid gap-10 md:grid-cols-3">
-          {['Bible-centered churches', 'Equipped saints', 'Transformed communities'].map((item, index) => <div className="dark-stat" key={item}><span>0{index + 1}</span><h3>{item}</h3><p>These three marks guide the mission's work: churches grounded in Scripture, believers trained for ministry, and communities renewed by the gospel.</p></div>)}
+          {[
+            { title: 'Bible-centered churches', text: 'Churches grounded in Scripture, governed by faithful elders, and committed to the ordinary means of grace — preaching, prayer, and the sacraments.' },
+            { title: 'Equipped saints', text: 'Believers trained for ministry through teaching, discipleship, and hands-on service — prepared to carry the gospel into every sphere of life.' },
+            { title: 'Transformed communities', text: 'Communities renewed by the gospel as churches live out mercy, justice, and witness in their neighborhoods and beyond.' },
+          ].map((item, index) => <div className="dark-stat" key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></div>)}
         </div>
       </section>
     </>

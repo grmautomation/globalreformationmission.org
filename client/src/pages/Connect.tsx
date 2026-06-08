@@ -6,10 +6,12 @@ import { Facebook, Youtube } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
 import { assets, socialLinks } from "@/lib/siteData";
 import ContactForm from "@/components/ContactForm";
+import SEO from "@/components/SEO";
 
 export default function Connect() {
   return (
     <>
+      <SEO title="Connect" description="Connect with Global Reformation Mission through YouTube, Facebook, or our contact form in Lewiston, ME." path="/connect" />
       <PageHero kicker="Connect" title="Clear pathways for conversation and updates." image={assets.hero}>
         Follow the mission's official channels, watch teaching, and send us a message directly.
       </PageHero>
