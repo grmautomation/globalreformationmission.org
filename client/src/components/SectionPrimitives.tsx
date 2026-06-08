@@ -25,7 +25,11 @@ export function PageHero({ kicker, title, children, image, cta }: { kicker: stri
           <p className="eyebrow text-[var(--gold)]">{kicker}</p>
           <h1 className="mt-5 font-serif text-5xl font-semibold leading-[0.95] md:text-7xl">{title}</h1>
           <div className="mt-6 max-w-2xl text-xl leading-9 text-[var(--steel)]">{children}</div>
-          {cta && <Link href={cta.href} className="btn-primary mt-8 inline-flex">{cta.label}</Link>}
+          {cta && (cta.href.startsWith("http") || cta.href.startsWith("//") ? (
+            <a href={cta.href} target="_blank" rel="noreferrer" className="btn-primary mt-8 inline-flex">{cta.label}</a>
+          ) : (
+            <Link href={cta.href} className="btn-primary mt-8 inline-flex">{cta.label}</Link>
+          ))}
         </div>
       </div>
     </section>

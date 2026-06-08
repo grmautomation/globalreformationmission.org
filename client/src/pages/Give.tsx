@@ -1,9 +1,9 @@
 /**
  * Design philosophy reminder: Liturgical Editorial Modernism with cartographic mission cues.
- * Giving should be presented as responsible partnership.
+ * Giving should be clear, purposeful, and direct — partnership for the gospel.
  */
-import { ExternalLink, HandHeart, Mail, Send } from "lucide-react";
-import { PageHero, SectionHeading } from "@/components/SectionPrimitives";
+import { ExternalLink } from "lucide-react";
+import { PageHero } from "@/components/SectionPrimitives";
 import { assets, kofiUrl } from "@/lib/siteData";
 
 export default function Give() {
@@ -12,42 +12,34 @@ export default function Give() {
       <PageHero kicker="Give" title="Partnership for gospel work." image={assets.missionMap} cta={{ href: kofiUrl, label: "Support the Mission" }}>
         Giving is an act of worship and partnership. Every gift supports the proclamation of the gospel, the strengthening of churches, and the training of faithful workers.
       </PageHero>
+
       <section className="section parchment-grid">
-        <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <SectionHeading kicker="01 / Stewardship" title="Pray, give, go, and send with purpose.">
-            Partnership takes many forms. Whether through prayer, financial support, or direct service, every contribution advances the mission to plant and strengthen Bible-centered churches.
-          </SectionHeading>
-          <div className="grid gap-5 md:grid-cols-3">
-            <div className="info-card"><HandHeart className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Give</h3><p>Financial partnership enables teaching, discipleship, church planting, and outreach to continue and expand.</p></div>
-            <div className="info-card"><Send className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Send</h3><p>Partnership strengthens the sending of faithful workers into local and global fields of service.</p></div>
-            <div className="info-card"><ExternalLink className="h-6 w-6 text-[var(--mission-blue)]" /><h3>Donate</h3><p>Support the mission directly through our secure giving partner. Every contribution goes toward gospel proclamation and church strengthening.</p></div>
-          </div>
-        </div>
-      </section>
-      <section className="section bg-[var(--midnight)] text-[var(--parchment)]">
-        <div className="container grid gap-10 md:grid-cols-[1.2fr_0.8fr] items-center">
-          <div>
-            <h2 className="font-serif text-5xl leading-none">Support the Mission</h2>
-            <p className="text-lg leading-8 text-[var(--steel)] mt-6 max-w-lg">
-              Your partnership makes the work of the gospel possible. Give securely through our giving partner, Ko-fi, using your card or PayPal.
-            </p>
+        <div className="container max-w-4xl text-center">
+          <p className="eyebrow text-[var(--navy)]">02 / Stewardship</p>
+          <h2 className="mt-4 font-serif text-4xl font-semibold leading-[0.98] md:text-6xl text-[var(--navy)]">
+            Your partnership makes the work possible.
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-[var(--ink-soft)] max-w-2xl mx-auto">
+            Give securely through Ko-fi using your card or PayPal. Every contribution goes directly toward
+            teaching, discipleship, church planting, and outreach.
+          </p>
+          <div className="mt-10 flex flex-col items-center gap-6">
             <a
-              className="btn-primary mt-7 inline-flex items-center gap-2"
               href={kofiUrl}
               target="_blank"
               rel="noreferrer"
+              className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4"
             >
-              Give Now <ExternalLink className="h-4 w-4" />
+              Give Now <ExternalLink className="h-5 w-5" />
             </a>
-          </div>
-          <div className="flex justify-center md:justify-end">
-            <a href={kofiUrl} target="_blank" rel="noreferrer" className="block bg-white rounded-xl p-3">
+            <a href={kofiUrl} target="_blank" rel="noreferrer" className="block bg-white rounded-xl p-3 shadow-md">
               <img
                 src="/give-qr.png"
                 alt="Scan to support Global Reformation Mission on Ko-fi"
-                className="w-40 h-40 md:w-48 md:h-48"
+                className="w-44 h-44"
               />
             </a>
+            <p className="text-sm text-[var(--ink-soft)]">Or scan the QR code with your phone</p>
           </div>
         </div>
       </section>
