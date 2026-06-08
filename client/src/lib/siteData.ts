@@ -9,6 +9,8 @@ export const socialLinks = {
   facebook: "https://www.facebook.com/globalreformationmission",
 };
 
+export const kofiUrl = "https://ko-fi.com/globalreformationmission";
+
 export const assets = {
   hero: "https://d2xsxph8kpxj0f.cloudfront.net/310519663285988803/3ZUpWVbQs8K7BH2BqZvsuF/grm_hero_cartographic_sanctuary-EuZ89gXaUWMkRGFHAs3qcH.webp",
   missionMap: "https://d2xsxph8kpxj0f.cloudfront.net/310519663285988803/3ZUpWVbQs8K7BH2BqZvsuF/grm_mission_pathway_map-HHiP8Wa5jveaQdbv9WRiiF.webp",
