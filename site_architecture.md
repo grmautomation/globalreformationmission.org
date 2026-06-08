@@ -16,7 +16,7 @@ The website will translate the existing brand guide into a complete public-facin
 | `/mission` | Mission | Present the church-planting and strengthening pathway | Pray, give, go, send |
 | `/teachings` | Teachings | Surface teaching categories and YouTube-linked sermons | Watch latest, browse streaming page |
 | `/stream` | Stream | Dedicated video hub using public YouTube channel and selected embeds | Watch embedded teachings, open channel |
-| `/give` | Give | Present giving as a partnership pathway; no payment processing in mockup | Contact for giving details, partner |
+| `/give` | Give | Present giving as partnership for the gospel via Ko-fi integration | Support the Mission, Give Now (card/PayPal) |
 | `/connect` | Connect | Provide clear contact/social links and engagement pathways | Open YouTube, open Facebook |
 
 ## Content principles
@@ -57,4 +57,4 @@ Previously used the YouTube RSS feed (`/feeds/videos.xml`) which was unreliable 
 
 ## Implementation constraints
 
-The project remains frontend-only. YouTube embeds will use public iframe URLs and links. Giving will be a mockup pathway rather than payment processing. Any future donation checkout would require a confirmed giving platform or a Stripe-enabled upgrade.
+The project remains frontend-only with static hosting on GitHub Pages. YouTube embeds use public iframe URLs and links. Giving is processed through **Ko-fi** (ko-fi.com/globalreformationmission), which handles card and PayPal payments securely off-site. No custom payment processing code runs on the site — the `/give` page links to Ko-fi's hosted checkout. The QR code on the page (`client/public/give-qr.png`) encodes the Ko-fi donation URL for mobile scanning.

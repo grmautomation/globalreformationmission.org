@@ -25,6 +25,17 @@
 - [x] Fix workflow: remove broken site-source working directory
 - [x] Add YOUTUBE_API_KEY as GitHub repo secret
 
+### Ko-fi Giving Integration (2026-06-08)
+
+- [x] Create Ko-fi account at ko-fi.com/globalreformationmission
+- [x] Fix PageHero component to handle external links (was using wouter Link, not <a>)
+- [x] Redesign /give page as 3-section flow: conviction → grounding → action
+- [x] Add scripture grounding (2 Corinthians 9:7 quote-ledger) to give page
+- [x] Link "Support the Mission" hero CTA and "Give Now" button to Ko-fi
+- [x] Add QR code (links to Ko-fi) to /give page
+- [x] Update site_architecture.md, README.md with live payment info
+- [x] Deploy and verify both buttons navigate to Ko-fi correctly
+
 ## Pending
 
 - [ ] Monitor YouTube API quota usage (10k/day free, 4 req/day → negligible)

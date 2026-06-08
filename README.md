@@ -36,7 +36,7 @@ Public-facing website for Global Reformation Mission, a ministry dedicated to pr
 | `/teachings` | Teachings | Latest videos + channel link |
 | `/stream` | Stream | Video hub: featured teaching + recent videos |
 | `/devotions` | Devotions | Daily devotional reader + audio (Christ Himself widgets) |
-| `/give` | Give | Partnership pathway (no payment processing) |
+| `/give` | Give | Giving via Ko-fi (card/PayPal) — conviction → theology → action flow |
 | `/connect` | Connect | Contact info and social links |
 
 ## Video Pipeline

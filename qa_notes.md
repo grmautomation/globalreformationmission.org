@@ -31,3 +31,20 @@ The featured video (top) was also appearing as the first card in the "Current te
 
 ### Video pipeline
 Replaced YouTube RSS feed (stale, unreliable ordering) with YouTube Data API v3. Fetch script now uses `search?order=date` endpoint with an API key. Fetches 4 videos so /stream can feature 1 and show 3 in the grid. Runs every 6 hours via GitHub Actions. API key stored as repo secret.
+
+---
+
+## Ko-fi Giving Integration (2026-06-08)
+
+### /give — Complete redesign
+
+The page was rebuilt from a mockup (no payment processing, dead-end Facebook link) into a live donation flow:
+
+- **Ko-fi account** created at `ko-fi.com/globalreformationmission` for card/PayPal processing
+- **PageHero component fixed** — was using wouter's `Link` (client-side router) for the CTA, which silently broke external URLs. Now detects `http`-prefixed hrefs and renders a native `<a target="_blank">` instead.
+- **Layout restructured** into a 3-section narrative flow matching the site's rhythm:
+  1. Conviction (hero, dark navy) — "Support the Mission" CTA
+  2. Grounding (parchment, two columns) — scripture quote-ledger (2 Cor 9:7) + giving theology
+  3. Action (midnight, two columns) — "Give Now" button + QR code in cta-panel
+- **QR code** placed in `client/public/give-qr.png` for Vite asset pipeline; encodes the Ko-fi donation URL for mobile scanning
+- **All documentation updated**: site_architecture.md, README.md, todo.md
