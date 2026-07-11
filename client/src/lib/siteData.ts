@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Genèse 11:1-9! 2', age: 'Streamed 1 day ago', id: '1-69hoONLO8' },
-  { title: 'L’Eglise(l’Assemblée)! 11', age: 'Streamed 1 day ago', id: 'VcBwXCiNJhc' },
-  { title: 'L’Eglise(l’Assemblée)! 11', age: 'Streamed 1 day ago', id: 'fxHuhmACuLU' },
-  { title: 'La femme sage bâtit sa maison! 24', age: 'Streamed 2 days ago', id: 'SsBQVm5WT2I' },
+  { title: 'La femme selon le cœur de Dieu! 29', age: 'Streamed less than an hour ago', id: 'gsOQN0kKpAs' },
+  { title: 'La femme selon le cœur de Dieu! 28', age: 'Streamed 1 hour ago', id: 'Z_-3M8-dx5o' },
+  { title: 'La crainte de toute la vie! 22', age: 'Streamed 2 hours ago', id: 'tHdmxFzmry4' },
+  { title: 'La vie chrétienne en mission! 34', age: 'Streamed 12 hours ago', id: 'zLSRsV-KznA' },
 ];
 
 export const navItems = [
