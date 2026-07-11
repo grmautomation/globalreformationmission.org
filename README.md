@@ -41,12 +41,15 @@ Public-facing website for Global Reformation Mission, a ministry dedicated to pr
 
 ## Video Pipeline
 
-Videos are sourced from the channel's YouTube Data API v3 feed:
+Videos are sourced from the channel's YouTube Data API v3 feed (uploads playlist endpoint):
 
 - **Schedule:** Every 6 hours (GitHub Actions cron)
+- **Endpoint:** `playlistItems` (uploads playlist) — more reliable than `search` for latest uploads
 - **Fetches:** 4 most recent uploads
 - **Uses:** 1 featured (stream hero) + 3 in grid
-- **Secret:** `YOUTUBE_API_KEY` in repo secrets
+- **Workflow permissions:** `contents: write` required for auto-push
+- **Secret:** `YOUTUBE_API_KEY` in repo secrets (owned by `grmautomation@gmail.com`)
+- **API Key Owner:** Automation account `grmautomation@gmail.com` — also used for GitHub, Cloudflare, and YouTube automation across all GRM projects
 
 Run manually: `gh workflow run "Update Videos from YouTube"`
 

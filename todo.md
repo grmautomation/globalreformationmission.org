@@ -24,6 +24,8 @@
 - [x] Rewrite fetch script to use YouTube API (accurate chronological order)
 - [x] Fix workflow: remove broken site-source working directory
 - [x] Add YOUTUBE_API_KEY as GitHub repo secret
+- [x] Fix push permissions: add `permissions: contents: write` to workflow (2026-07-11)
+- [x] Fix stale video data: switch from `/search` to `/playlistItems` endpoint — uploads playlist is immediate, no indexing lag (2026-07-11)
 
 ### Ko-fi Giving Integration (2026-06-08)
 

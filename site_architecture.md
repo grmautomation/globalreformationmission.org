@@ -37,13 +37,15 @@ The site will use verified language from the style guide and the public YouTube 
 Videos are sourced from the YouTube Data API v3 via a GitHub Actions workflow:
 
 - **Schedule:** Every 6 hours (`0 */6 * * *`)
-- **Endpoint:** `search?part=snippet&channelId=UC5TzLV6MqV7JB7rdvdOtqpA&order=date&maxResults=4&type=video`
+- **Endpoint:** `playlistItems?part=snippet&playlistId=UU5TzLV6MqV7JB7rdvdOtqpA&maxResults=4` (uploads playlist — more reliable than search for latest uploads, includes streams)
 - **Script:** `scripts/fetch-latest-videos.mjs`
-- **Secret:** `YOUTUBE_API_KEY` (repo secret)
+- **Workflow permissions:** `contents: write` — auto-token needs explicit write access for `git push`
+- **Secret:** `YOUTUBE_API_KEY` (repo secret, owned by `grmautomation@gmail.com`)
+- **API Key Owner:** The `grmautomation@gmail.com` account manages all GRM service credentials (YouTube, GitHub, Cloudflare, etc.)
 - **Output:** Updates `client/src/lib/siteData.ts` → `videos[]`
-- **Why not RSS:** YouTube RSS feed was returning stale/out-of-order entries. The API returns accurate chronological data.
+- **Why not search:** The YouTube `/search` endpoint has indexing lag — new uploads/streams could be delayed by hours. The uploads playlist (`playlistItems`) returns the actual publish order immediately.
 
-Previously used the YouTube RSS feed (`/feeds/videos.xml`) which was unreliable — the first entry was often months out of order. Migrated to API v3 for correctness.
+Previously used the YouTube RSS feed (`/feeds/videos.xml`) which was unreliable — the first entry was often months out of order. Migrated to API v3 for correctness. Later switched from `search` to `playlistItems` (2026-07-11) for reliable latest-upload detection.
 
 ## Visual system
 

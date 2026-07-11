@@ -30,7 +30,11 @@ The featured video (top) was also appearing as the first card in the "Current te
 - /devotions: "Today's Reading" → "Today's Devotional"
 
 ### Video pipeline
-Replaced YouTube RSS feed (stale, unreliable ordering) with YouTube Data API v3. Fetch script now uses `search?order=date` endpoint with an API key. Fetches 4 videos so /stream can feature 1 and show 3 in the grid. Runs every 6 hours via GitHub Actions. API key stored as repo secret.
+Replaced YouTube RSS feed (stale, unreliable ordering) with YouTube Data API v3. Fetch script uses `playlistItems` endpoint (uploads playlist) — more reliable than `search` which can lag hours behind new uploads. Fetches 4 videos so /stream can feature 1 and show 3 in the grid. Runs every 6 hours via GitHub Actions. API key stored as repo secret.
+
+#### Workflow fixes (2026-07-11)
+- **Permission denied on push:** Added `permissions: contents: write` to the job — default GITHUB_TOKEN is read-only
+- **Stale video data:** Switched from `/search` to `/playlistItems` endpoint — the uploads playlist returns actual latest uploads immediately, including streams
 
 ---
 
