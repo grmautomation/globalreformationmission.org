@@ -2,7 +2,8 @@
 
 /**
  * Fetches the latest 3 videos from the Global Reformation Mission YouTube channel
- * via the YouTube Data API v3 (requires YOUTUBE_API_KEY env var).
+ * via the YouTube Data API v3 **uploads playlist** endpoint.
+ * Uses playlistItems which is more reliable than search for latest uploads.
  *
  * Usage: YOUTUBE_API_KEY=... node scripts/fetch-latest-videos.mjs
  *
@@ -10,13 +11,16 @@
  */
 
 const CHANNEL_ID = "UC5TzLV6MqV7JB7rdvdOtqpA";
+// Uploads playlist ID: UU + channel_id (without the UC prefix)
+const UPLOADS_PLAYLIST_ID = "UU5TzLV6MqV7JB7rdvdOtqpA";
+
 const API_KEY = process.env.YOUTUBE_API_KEY;
 if (!API_KEY) {
   console.error("YOUTUBE_API_KEY environment variable is required");
   process.exit(1);
 }
 
-const API_URL = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=4&type=video&key=${API_KEY}`;
+const API_URL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${UPLOADS_PLAYLIST_ID}&maxResults=4&key=${API_KEY}`;
 const SITE_DATA_PATH = new URL("../client/src/lib/siteData.ts", import.meta.url);
 
 function relativeAge(isoDate) {
@@ -36,7 +40,8 @@ function relativeAge(isoDate) {
 }
 
 async function main() {
-  console.log(`Fetching videos via YouTube Data API for channel ${CHANNEL_ID}`);
+  console.log(`Fetching videos via YouTube Data API playlistItems for channel ${CHANNEL_ID}`);
+
   const response = await fetch(API_URL);
 
   if (!response.ok) {
@@ -53,8 +58,9 @@ async function main() {
     process.exit(1);
   }
 
+  // playlistItems returns items in reverse chronological order (newest first) ✓
   const top3 = data.items.map((item) => ({
-    id: item.id.videoId,
+    id: item.snippet.resourceId.videoId,
     title: item.snippet.title,
     published: item.snippet.publishedAt,
   }));
