@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La femme selon le cœur de Dieu! 29', age: 'Streamed 5 hours ago', id: 'gsOQN0kKpAs' },
-  { title: 'La femme selon le cœur de Dieu! 28', age: 'Streamed 8 hours ago', id: 'Z_-3M8-dx5o' },
-  { title: 'La crainte de toute la vie! 22', age: 'Streamed 8 hours ago', id: 'tHdmxFzmry4' },
-  { title: 'La vie chrétienne en mission! 34', age: 'Streamed 18 hours ago', id: 'zLSRsV-KznA' },
+  { title: 'La crainte de toute la vie! 22', age: 'Streamed 2 hours ago', id: 'tHdmxFzmry4' },
+  { title: 'La femme selon le cœur de Dieu! 29', age: 'Streamed 12 hours ago', id: 'gsOQN0kKpAs' },
+  { title: 'La femme selon le cœur de Dieu! 28', age: 'Streamed 14 hours ago', id: 'Z_-3M8-dx5o' },
+  { title: 'La vie chrétienne en mission! 34', age: 'Streamed 1 day ago', id: 'zLSRsV-KznA' },
 ];
 
 export const navItems = [
