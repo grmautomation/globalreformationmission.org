@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
+  { title: 'La vie chrétienne en mission! 35', age: 'Streamed 1 hour ago', id: 'p5P0jedGc40' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 2', age: 'Streamed 1 day ago', id: 'Oyy6bP96ADA' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du Rédempteur! 1', age: 'Streamed 3 days ago', id: 'cE6cx_DV2tY' },
   { title: 'L’Eglise(Assemblée)! 17', age: 'Streamed 3 days ago', id: 'rBpmvBrI-E8' },
-  { title: 'la femme selon le coeur de Dieu! 29', age: 'Streamed 3 days ago', id: 'WJ2Srwf_30M' },
 ];
 
 export const navItems = [
