@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La vie chrétienne en mission! 36', age: 'Streamed 6 hours ago', id: 'JDJrQG6CJGA' },
+  { title: 'la femme selon le coeur de Dieu! 30', age: 'Streamed less than an hour ago', id: 'mMW2LkFjwFs' },
+  { title: 'La femme selon le cœur de Dieu! 30', age: 'Streamed less than an hour ago', id: 'dh6eVJpVnlY' },
+  { title: 'La vie chrétienne en mission! 36', age: 'Streamed 12 hours ago', id: 'JDJrQG6CJGA' },
   { title: 'losambo! 10', age: 'Streamed 1 day ago', id: 'f7iRr5v-zqk' },
-  { title: 'La vie chrétienne en mission! 35', age: 'Streamed 1 day ago', id: 'p5P0jedGc40' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 2', age: 'Streamed 3 days ago', id: 'Oyy6bP96ADA' },
 ];
 
 export const navItems = [
