@@ -34,7 +34,7 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 4', age: 'Streamed 9 hours ago', id: 'MhIWTJo6WYo' },
+  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 4', age: 'Streamed 16 hours ago', id: 'MhIWTJo6WYo' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 3', age: 'Streamed 2 days ago', id: 'KTRY7FRy7f0' },
   { title: 'L’Eglise(Assemblée)! 18', age: 'Streamed 2 days ago', id: '3vE693vYEaQ' },
   { title: 'La femme selon le cœur de Dieu! 30', age: 'Streamed 3 days ago', id: 'dh6eVJpVnlY' },
