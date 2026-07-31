@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 16 hours ago', id: 's9YkVvG1fFo' },
-  { title: 'Losambo! 11', age: 'Streamed 17 hours ago', id: '9S27nQw4mLY' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prepare la venue du rédempteur! 6', age: 'Streamed 2 days ago', id: 'NfPNhWHZ_Kg' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 5', age: 'Streamed 4 days ago', id: 'OxbJRjwHT7c' },
+  { title: 'la femme selon le coeur de Dieu! 31', age: 'Streamed 5 days ago', id: 'fe3AnCQ-NCM' },
+  { title: 'La femme selon le cœur de Dieu! 31', age: 'Streamed 5 days ago', id: 'nMNftI3b-mo' },
 ];
 
 export const navItems = [
