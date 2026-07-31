@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 4 hours ago', id: 's9YkVvG1fFo' },
-  { title: 'Losambo! 11', age: 'Streamed 5 hours ago', id: '9S27nQw4mLY' },
+  { title: 'Global Reformation Mission is live!', age: 'Streamed 11 hours ago', id: 's9YkVvG1fFo' },
+  { title: 'Losambo! 11', age: 'Streamed 12 hours ago', id: '9S27nQw4mLY' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prepare la venue du rédempteur! 6', age: 'Streamed 1 day ago', id: 'NfPNhWHZ_Kg' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 5', age: 'Streamed 3 days ago', id: 'OxbJRjwHT7c' },
+  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 5', age: 'Streamed 4 days ago', id: 'OxbJRjwHT7c' },
 ];
 
 export const navItems = [
