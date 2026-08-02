@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Souviens-toi de ton créateur! 22', age: 'Streamed 7 hours ago', id: 'yFDjqQj5YYA' },
-  { title: '2 Thessaloniciens 2! 1', age: 'Streamed 1 day ago', id: 'RTf9Zc9Ll0Q' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prepare la venue du rédempteur! 6', age: 'Streamed 4 days ago', id: 'NfPNhWHZ_Kg' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 5', age: 'Streamed 6 days ago', id: 'OxbJRjwHT7c' },
+  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 7', age: 'Streamed less than an hour ago', id: 'oMhDcwIiAWo' },
+  { title: 'La femme selon le cœur de Dieu! 32', age: 'Streamed 2 hours ago', id: '16n6Fd-sv4k' },
+  { title: 'la maman selon coeur de Dieu!', age: 'Streamed 2 hours ago', id: '6ko0OLAsGcI' },
+  { title: 'Souviens-toi de ton créateur! 22', age: 'Streamed 13 hours ago', id: 'yFDjqQj5YYA' },
 ];
 
 export const navItems = [
