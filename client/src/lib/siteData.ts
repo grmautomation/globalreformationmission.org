@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
+  { title: 'Losambo! 11', age: 'Streamed less than an hour ago', id: 'da-LXbl955M' },
+  { title: '2 Thessaloniciens 2! 2', age: 'Streamed less than an hour ago', id: 'nwFHpquVzuw' },
+  { title: '2 Tessaloniciens 2! 3', age: 'Streamed 1 hour ago', id: 'JN5CeBgUAQc' },
   { title: 'La grâce de Dieu une famille brisée et prépare la venue du rédempteur! 8', age: 'Streamed 2 days ago', id: '6MndOfUJUAc' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 7', age: 'Streamed 4 days ago', id: 'xe01RHbu9mA' },
-  { title: 'L’Eglise(assemblée)! 19', age: 'Streamed 4 days ago', id: '30xxz5lwCKA' },
-  { title: 'La femme selon le cœur de Dieu! 32', age: 'Streamed 4 days ago', id: '16n6Fd-sv4k' },
 ];
 
 export const navItems = [
