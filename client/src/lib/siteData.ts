@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: '2 Timothée! 1', age: 'Streamed 1 hour ago', id: 'BWFSy1Ah4C8' },
-  { title: '2 Tessaloniciens 2! 3', age: 'Streamed 12 hours ago', id: 'JN5CeBgUAQc' },
-  { title: 'Losambo! 11', age: 'Streamed 1 day ago', id: 'da-LXbl955M' },
-  { title: '2 Thessaloniciens 2! 2', age: 'Streamed 1 day ago', id: 'nwFHpquVzuw' },
+  { title: 'La femme selon le cœur de Dieu! 33', age: 'Streamed 4 hours ago', id: 'rN3O_9_L9qg' },
+  { title: 'Global Reformation Mission is live!', age: 'Streamed 4 hours ago', id: 'dufUwpZ_hpA' },
+  { title: '2 Timothée! 1', age: 'Streamed 8 hours ago', id: 'BWFSy1Ah4C8' },
+  { title: '2 Tessaloniciens 2! 3', age: 'Streamed 19 hours ago', id: 'JN5CeBgUAQc' },
 ];
 
 export const navItems = [
