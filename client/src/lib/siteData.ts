@@ -34,9 +34,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: '2 Timothée! 1', age: 'Streamed 1 hour ago', id: 'BWFSy1Ah4C8' },
-  { title: 'La femme selon le cœur de Dieu! 33', age: 'Streamed 10 hours ago', id: 'rN3O_9_L9qg' },
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 10 hours ago', id: 'dufUwpZ_hpA' },
+  { title: 'Global Reformation Mission is live!', age: 'Streamed 3 hours ago', id: 'dufUwpZ_hpA' },
+  { title: 'La femme selon le cœur de Dieu! 33', age: 'Streamed 4 hours ago', id: 'rN3O_9_L9qg' },
+  { title: '2 Timothée! 1', age: 'Streamed 7 hours ago', id: 'BWFSy1Ah4C8' },
   { title: '2 Tessaloniciens 2! 3', age: 'Streamed 1 day ago', id: 'JN5CeBgUAQc' },
 ];
 
