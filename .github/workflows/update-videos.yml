@@ -9,6 +9,7 @@ jobs:
   update-videos:
     permissions:
       contents: write
+      actions: write   # required to dispatch deploy.yml (GITHUB_TOKEN pushes don't trigger other workflows)
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -37,3 +38,9 @@ jobs:
           git add client/src/lib/siteData.ts
           git commit -m "Auto-update videos from YouTube API"
           git push
+
+      - name: Trigger deploy
+        if: steps.git-check.outputs.changed == 'true'
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
