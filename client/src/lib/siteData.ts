@@ -34,9 +34,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Une heure de prière! 1', age: 'Streamed 7 hours ago', id: 'ej6mFdwMVEU' },
-  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 9', age: 'Streamed 16 hours ago', id: 'dKhTBmWaHPc' },
-  { title: 'L’Eglise(assemblée)! 20', age: 'Streamed 19 hours ago', id: 'BVaJ-tUf0gU' },
+  { title: 'Une heure de prière! 1', age: 'Streamed 1 hour ago', id: 'ej6mFdwMVEU' },
+  { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 9', age: 'Streamed 22 hours ago', id: 'dKhTBmWaHPc' },
+  { title: 'L’Eglise(assemblée)! 20', age: 'Streamed 1 day ago', id: 'BVaJ-tUf0gU' },
   { title: 'La femme selon le cœur de Dieu! 33', age: 'Streamed 1 day ago', id: 'dufUwpZ_hpA' },
 ];
 
