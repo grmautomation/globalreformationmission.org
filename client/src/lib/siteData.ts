@@ -34,9 +34,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La Sanctification! 1', age: 'Streamed 4 hours ago', id: 'c-mHoOnDlr8' },
-  { title: 'Une heure de Prière! 2', age: 'Streamed 7 hours ago', id: '6dOQXA4GbEU' },
-  { title: 'Une heure de prière! 1', age: 'Streamed 19 hours ago', id: 'ej6mFdwMVEU' },
+  { title: 'Une heure de Prière! 2', age: 'Streamed 1 hour ago', id: '6dOQXA4GbEU' },
+  { title: 'La Sanctification! 1', age: 'Streamed 10 hours ago', id: 'c-mHoOnDlr8' },
+  { title: 'Une heure de prière! 1', age: 'Streamed 1 day ago', id: 'ej6mFdwMVEU' },
   { title: 'La grâce de Dieu qui restaure une famille brisée et prépare la venue du rédempteur! 9', age: 'Streamed 1 day ago', id: 'dKhTBmWaHPc' },
 ];
 
