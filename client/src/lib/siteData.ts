@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Une heure de prière! 5', age: 'Streamed 6 hours ago', id: 'lWvhKVZS2CY' },
+  { title: '2 Timothée! 2', age: 'Streamed 1 hour ago', id: 'Ri_8Ycj9seE' },
+  { title: 'Une heure de prière! 4', age: 'Streamed 2 hours ago', id: 'ZaBNvWnd_6w' },
+  { title: 'Une heure de prière! 5', age: 'Streamed 12 hours ago', id: 'lWvhKVZS2CY' },
   { title: 'Une heure de prière! 3', age: 'Streamed 2 days ago', id: 'mkh3mOVTzPc' },
-  { title: 'La Sanctification! 1', age: 'Streamed 3 days ago', id: 'c-mHoOnDlr8' },
-  { title: 'Une heure de Prière! 2', age: 'Streamed 3 days ago', id: '6dOQXA4GbEU' },
 ];
 
 export const navItems = [
