@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: '2 Timothée! 2', age: 'Streamed 1 hour ago', id: 'Ri_8Ycj9seE' },
-  { title: 'Une heure de prière! 4', age: 'Streamed 2 hours ago', id: 'ZaBNvWnd_6w' },
-  { title: 'Une heure de prière! 5', age: 'Streamed 12 hours ago', id: 'lWvhKVZS2CY' },
-  { title: 'Une heure de prière! 3', age: 'Streamed 2 days ago', id: 'mkh3mOVTzPc' },
+  { title: 'La femme selon le cœur de Dieu! 34', age: 'Streamed 4 hours ago', id: '35DSLiPXMOU' },
+  { title: '2 Timothée! 2', age: 'Streamed 8 hours ago', id: 'Ri_8Ycj9seE' },
+  { title: 'Une heure de prière! 4', age: 'Streamed 9 hours ago', id: 'ZaBNvWnd_6w' },
+  { title: 'Une heure de prière! 5', age: 'Streamed 18 hours ago', id: 'lWvhKVZS2CY' },
 ];
 
 export const navItems = [
