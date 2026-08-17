@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'L’Eglise(Assemblée)! 21', age: 'Streamed less than an hour ago', id: 'sr4WFnsoJ0s' },
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 1 hour ago', id: 'ccYcdI9vgck' },
-  { title: 'La femme selon le cœur de Dieu! 34', age: 'Streamed 9 hours ago', id: '35DSLiPXMOU' },
-  { title: '2 Timothée! 2', age: 'Streamed 13 hours ago', id: 'Ri_8Ycj9seE' },
+  { title: 'La Santification! 2', age: 'Streamed 4 hours ago', id: '-pqq8evMEu8' },
+  { title: 'L’Eglise(Assemblée)! 21', age: 'Streamed 7 hours ago', id: 'sr4WFnsoJ0s' },
+  { title: 'Global Reformation Mission is live!', age: 'Streamed 8 hours ago', id: 'ccYcdI9vgck' },
+  { title: 'La femme selon le cœur de Dieu! 34', age: 'Streamed 16 hours ago', id: '35DSLiPXMOU' },
 ];
 
 export const navItems = [
