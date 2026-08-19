@@ -34,9 +34,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Mardi: intercession! 1', age: 'Streamed less than an hour ago', id: '3t_DeQzz5RE' },
-  { title: 'La Sanctification! 3', age: 'Streamed 9 hours ago', id: 'RpIwB8GG7fI' },
-  { title: 'La Santification! 2', age: 'Streamed 1 day ago', id: '-pqq8evMEu8' },
+  { title: 'La Sanctification! 3', age: 'Streamed 2 hours ago', id: 'RpIwB8GG7fI' },
+  { title: 'Mardi: intercession! 1', age: 'Streamed 6 hours ago', id: '3t_DeQzz5RE' },
+  { title: 'La Santification! 2', age: 'Streamed 2 days ago', id: '-pqq8evMEu8' },
   { title: 'L’Eglise(Assemblée)! 21', age: 'Streamed 2 days ago', id: 'sr4WFnsoJ0s' },
 ];
 
