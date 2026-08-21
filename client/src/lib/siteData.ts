@@ -35,9 +35,9 @@ export const pathways = [
 
 export const videos = [
   { title: '2 Tessaloniciens2! 4', age: 'Streamed 1 day ago', id: 'cTe2A1Oid_A' },
-  { title: 'La Sanctification! 3', age: 'Streamed 1 day ago', id: 'RpIwB8GG7fI' },
+  { title: 'La Sanctification! 3', age: 'Streamed 2 days ago', id: 'RpIwB8GG7fI' },
   { title: 'Mardi: intercession! 1', age: 'Streamed 2 days ago', id: '3t_DeQzz5RE' },
-  { title: 'La Santification! 2', age: 'Streamed 3 days ago', id: '-pqq8evMEu8' },
+  { title: 'La Santification! 2', age: 'Streamed 4 days ago', id: '-pqq8evMEu8' },
 ];
 
 export const navItems = [
