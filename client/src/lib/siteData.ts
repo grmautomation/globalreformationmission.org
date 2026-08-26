@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Mardi: Intercession! 2', age: 'Streamed 1 hour ago', id: 'CEbEiY5uVMQ' },
+  { title: 'La Sanfication! 5', age: 'Streamed 3 hours ago', id: 'BqIN1FLr5vE' },
+  { title: 'Mardi: Intercession! 2', age: 'Streamed 7 hours ago', id: 'CEbEiY5uVMQ' },
   { title: 'La Sanctification! 4', age: 'Streamed 1 day ago', id: '3BIumb0tgjw' },
   { title: 'L’Eglise(Assemblée)! 22', age: 'Streamed 1 day ago', id: '8sZWUWM9yxM' },
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 2 days ago', id: 'qOhsVYu_TsY' },
 ];
 
 export const navItems = [
