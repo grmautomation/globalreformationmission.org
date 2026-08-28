@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Jeudi: Intercession!', age: 'Streamed 4 hours ago', id: 'DC3fePVtEOw' },
-  { title: '2 Timothée! 4', age: 'Streamed 20 hours ago', id: 'wi-rrW6clpk' },
-  { title: 'La Sanfication! 5', age: 'Streamed 1 day ago', id: 'BqIN1FLr5vE' },
-  { title: 'Mardi: Intercession! 2', age: 'Streamed 1 day ago', id: 'CEbEiY5uVMQ' },
+  { title: 'Jeudi: Intercession!', age: 'Streamed 8 hours ago', id: 'DC3fePVtEOw' },
+  { title: '2 Timothée! 4', age: 'Streamed 1 day ago', id: 'wi-rrW6clpk' },
+  { title: 'La Sanfication! 5', age: 'Streamed 2 days ago', id: 'BqIN1FLr5vE' },
+  { title: 'Mardi: Intercession! 2', age: 'Streamed 2 days ago', id: 'CEbEiY5uVMQ' },
 ];
 
 export const navItems = [
