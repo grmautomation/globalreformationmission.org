@@ -34,7 +34,7 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: '2 Thessaloniciens! 7', age: 'Streamed 4 hours ago', id: 'diIEdqcLMsc' },
+  { title: '2 Thessaloniciens! 7', age: 'Streamed 9 hours ago', id: 'diIEdqcLMsc' },
   { title: 'La Sanctification! 5', age: 'Streamed 1 day ago', id: '-yoGuR0Wg5c' },
   { title: 'La femme selon le cœur de Dieu! 36', age: 'Streamed 4 days ago', id: '3vED10_GGM0' },
   { title: '2 Timothée! 4', age: 'Streamed 4 days ago', id: 'FcTnVjOg26U' },
