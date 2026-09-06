@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La femme selon le cœur de Dieu! 37', age: 'Streamed 5 hours ago', id: 'WfkZ1_7h9Fg' },
-  { title: '2 Timothée! 5', age: 'Streamed 9 hours ago', id: 'MP2E_t3Z5Pc' },
-  { title: '2 Tessaloniciens! 8', age: 'Streamed 19 hours ago', id: 'Sb1Yb5piQVA' },
-  { title: '2 Thessaloniciens! 7', age: 'Streamed 2 days ago', id: 'diIEdqcLMsc' },
+  { title: 'La femme selon le cœur de Dieu! 37', age: 'Streamed 1 hour ago', id: 'WfkZ1_7h9Fg' },
+  { title: '2 Timothée! 5', age: 'Streamed 5 hours ago', id: 'MP2E_t3Z5Pc' },
+  { title: '2 Tessaloniciens! 8', age: 'Streamed 1 day ago', id: 'Sb1Yb5piQVA' },
+  { title: '2 Thessaloniciens! 7', age: 'Streamed 3 days ago', id: 'diIEdqcLMsc' },
 ];
 
 export const navItems = [
