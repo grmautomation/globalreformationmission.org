@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'L’Eglise(Assemblée)! 23', age: 'Streamed 7 hours ago', id: 'kpG4jjmz5bs' },
-  { title: 'La femme selon le cœur de Dieu! 37', age: 'Streamed 16 hours ago', id: 'WfkZ1_7h9Fg' },
-  { title: '2 Timothée! 5', age: 'Streamed 20 hours ago', id: 'MP2E_t3Z5Pc' },
-  { title: '2 Tessaloniciens! 8', age: 'Streamed 1 day ago', id: 'Sb1Yb5piQVA' },
+  { title: 'L’Eglise(Assemblée)! 23', age: 'Streamed 4 hours ago', id: 'kpG4jjmz5bs' },
+  { title: 'La femme selon le cœur de Dieu! 37', age: 'Streamed 1 day ago', id: 'WfkZ1_7h9Fg' },
+  { title: '2 Timothée! 5', age: 'Streamed 1 day ago', id: 'MP2E_t3Z5Pc' },
+  { title: '2 Tessaloniciens! 8', age: 'Streamed 2 days ago', id: 'Sb1Yb5piQVA' },
 ];
 
 export const navItems = [
