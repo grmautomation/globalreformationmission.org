@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
+  { title: 'La sanctification! 7', age: 'Streamed less than an hour ago', id: 'HT8MKQ9_8h8' },
   { title: 'La Sanctification! 6', age: 'Streamed 4 days ago', id: 'Ul23iNiEfqM' },
   { title: 'L’Eglise(Assemblée)! 23', age: 'Streamed 6 days ago', id: 'kpG4jjmz5bs' },
   { title: 'La femme selon le cœur de Dieu! 37', age: 'Streamed 1 week ago', id: 'WfkZ1_7h9Fg' },
-  { title: '2 Timothée! 5', age: 'Streamed 1 week ago', id: 'MP2E_t3Z5Pc' },
 ];
 
 export const navItems = [
