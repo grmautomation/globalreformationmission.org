@@ -34,9 +34,9 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La sanctification! 7', age: 'Streamed 17 hours ago', id: 'HT8MKQ9_8h8' },
-  { title: 'Établir ce qui reste à régler et conduire l’Eglise selon la saine doctrine', age: 'Streamed 19 hours ago', id: 'wWlJyCM9TZ4' },
-  { title: 'La Sanctification! 6', age: 'Streamed 5 days ago', id: 'Ul23iNiEfqM' },
+  { title: 'La sanctification! 7', age: 'Streamed 1 day ago', id: 'HT8MKQ9_8h8' },
+  { title: 'Établir ce qui reste à régler et conduire l’Eglise selon la saine doctrine', age: 'Streamed 1 day ago', id: 'wWlJyCM9TZ4' },
+  { title: 'La Sanctification! 6', age: 'Streamed 6 days ago', id: 'Ul23iNiEfqM' },
   { title: 'L’Eglise(Assemblée)! 23', age: 'Streamed 1 week ago', id: 'kpG4jjmz5bs' },
 ];
 
