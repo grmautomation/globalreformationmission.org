@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
+  { title: 'La Sanctification! 8', age: 'Streamed less than an hour ago', id: 'z-a3uyG8h0c' },
   { title: 'La sanctification! 7', age: 'Streamed 1 day ago', id: 'HT8MKQ9_8h8' },
   { title: 'Établir ce qui reste à régler et conduire l’Eglise selon la saine doctrine', age: 'Streamed 1 day ago', id: 'wWlJyCM9TZ4' },
   { title: 'La Sanctification! 6', age: 'Streamed 6 days ago', id: 'Ul23iNiEfqM' },
-  { title: 'L’Eglise(Assemblée)! 23', age: 'Streamed 1 week ago', id: 'kpG4jjmz5bs' },
 ];
 
 export const navItems = [
