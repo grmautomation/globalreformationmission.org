@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Why did Jesus give Simon the name Cephas?', age: 'Streamed less than an hour ago', id: 'PAHlNYwW9Js' },
+  { title: 'La Sanctification! 9', age: 'Streamed less than an hour ago', id: 'LC_hhp7uGzs' },
+  { title: 'Why did Jesus give Simon the name Cephas?', age: 'Streamed 3 hours ago', id: 'PAHlNYwW9Js' },
   { title: 'La Sanctification! 8', age: 'Streamed 4 days ago', id: 'z-a3uyG8h0c' },
   { title: 'La sanctification! 7', age: 'Streamed 6 days ago', id: 'HT8MKQ9_8h8' },
-  { title: 'Établir ce qui reste à régler et conduire l’Eglise selon la saine doctrine', age: 'Streamed 6 days ago', id: 'wWlJyCM9TZ4' },
 ];
 
 export const navItems = [
