@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'la femme selon le coeur de Dieu! 37', age: 'Streamed 16 hours ago', id: 'okW9CbVbQtk' },
+  { title: 'Why did Jesus give Simon the name, Cephas! 2', age: 'Streamed less than an hour ago', id: 'Svu464bQXco' },
+  { title: 'la femme selon le coeur de Dieu! 37', age: 'Streamed 21 hours ago', id: 'okW9CbVbQtk' },
   { title: 'La Sanctification! 10', age: 'Streamed 4 days ago', id: 'Q1-3TNj7U2o' },
   { title: 'Discipleship meeting! 1', age: 'Streamed 5 days ago', id: 'MIVpQ5-qdII' },
-  { title: 'La Sanctification! 9', age: 'Streamed 6 days ago', id: 'LC_hhp7uGzs' },
 ];
 
 export const navItems = [
