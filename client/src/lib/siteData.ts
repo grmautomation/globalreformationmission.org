@@ -34,8 +34,8 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La femme selon le cœur de Dieu! 38', age: 'Streamed 3 hours ago', id: 's7wqt5_RfOo' },
-  { title: 'la femme selon le coeur de Dieu! 38', age: 'Streamed 3 hours ago', id: 'jtrBtYQVDxY' },
+  { title: 'La femme selon le cœur de Dieu! 38', age: 'Streamed 8 hours ago', id: 's7wqt5_RfOo' },
+  { title: 'la femme selon le coeur de Dieu! 38', age: 'Streamed 8 hours ago', id: 'jtrBtYQVDxY' },
   { title: 'Night prayer! 3', age: 'Streamed 3 days ago', id: '9BOcNlB-01g' },
   { title: 'Discipleship meeting! 3', age: 'Streamed 5 days ago', id: 'iHADNzsIdkM' },
 ];
