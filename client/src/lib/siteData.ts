@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La Sanctification! 15', age: 'Streamed 6 hours ago', id: 'lipNTpyVyYg' },
-  { title: 'Why did  Jesus give Simon the name , Cephas! 4', age: 'Streamed 10 hours ago', id: 'p3KzHw2clKg' },
-  { title: 'La femme selon le cœur de Dieu! 38', age: 'Streamed 18 hours ago', id: 's7wqt5_RfOo' },
-  { title: 'la femme selon le coeur de Dieu! 38', age: 'Streamed 18 hours ago', id: 'jtrBtYQVDxY' },
+  { title: 'La Sanctification! 15', age: 'Streamed 5 hours ago', id: 'lipNTpyVyYg' },
+  { title: 'Why did  Jesus give Simon the name , Cephas! 4', age: 'Streamed 8 hours ago', id: 'p3KzHw2clKg' },
+  { title: 'La femme selon le cœur de Dieu! 38', age: 'Streamed 1 day ago', id: 's7wqt5_RfOo' },
+  { title: 'la femme selon le coeur de Dieu! 38', age: 'Streamed 1 day ago', id: 'jtrBtYQVDxY' },
 ];
 
 export const navItems = [
