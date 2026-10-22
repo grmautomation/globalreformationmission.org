@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La Sanctification! 18', age: 'Streamed 11 hours ago', id: '07Bro-tDrMM' },
+  { title: 'Night prayer! 5', age: 'Streamed 3 hours ago', id: 'k0nnDZorxyk' },
+  { title: 'La Sanctification! 18', age: 'Streamed 16 hours ago', id: '07Bro-tDrMM' },
   { title: 'Discipleship meeting! 5', age: 'Streamed 1 day ago', id: 'xjF2f2IB0rI' },
   { title: 'La Sanctification! 17', age: 'Streamed 2 days ago', id: 'Rznb7RVSfDI' },
-  { title: 'Listen to God today, before it is too late! 1', age: 'Streamed 2 days ago', id: 'lvDFVtrhaY8' },
 ];
 
 export const navItems = [
