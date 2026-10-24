@@ -34,7 +34,7 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La Priere!', age: 'Streamed 11 hours ago', id: 'm5svLwCHvsc' },
+  { title: 'La Priere!', age: 'Streamed 16 hours ago', id: 'm5svLwCHvsc' },
   { title: 'Night prayer! 5', age: 'Streamed 1 day ago', id: 'k0nnDZorxyk' },
   { title: 'La Sanctification! 18', age: 'Streamed 2 days ago', id: '07Bro-tDrMM' },
   { title: 'Discipleship meeting! 5', age: 'Streamed 3 days ago', id: 'xjF2f2IB0rI' },
