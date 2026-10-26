@@ -34,8 +34,8 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'La Sanctification! 19', age: 'Streamed 1 hour ago', id: 'sIk8OOQyVtg' },
-  { title: 'Listen to God today, before it is too late! 2', age: 'Streamed 3 hours ago', id: 'alCtYqn4YpU' },
+  { title: 'La Sanctification! 19', age: 'Streamed 5 hours ago', id: 'sIk8OOQyVtg' },
+  { title: 'Listen to God today, before it is too late! 2', age: 'Streamed 9 hours ago', id: 'alCtYqn4YpU' },
   { title: 'La Priere!', age: 'Streamed 2 days ago', id: 'm5svLwCHvsc' },
   { title: 'Night prayer! 5', age: 'Streamed 3 days ago', id: 'k0nnDZorxyk' },
 ];
