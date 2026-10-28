@@ -34,8 +34,8 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Les Quatre Principes Fondamentaux de la Vie Chretienne! 1', age: 'Streamed less than an hour ago', id: 'rQZ6slyHtuk' },
-  { title: 'Discipleship meeting! 6', age: 'Streamed 10 hours ago', id: 'R72QgbeHCPE' },
+  { title: 'Les Quatre Principes Fondamentaux de la Vie Chretienne! 1', age: 'Streamed 5 hours ago', id: 'rQZ6slyHtuk' },
+  { title: 'Discipleship meeting! 6', age: 'Streamed 15 hours ago', id: 'R72QgbeHCPE' },
   { title: 'La Sanctification! 19', age: 'Streamed 1 day ago', id: 'sIk8OOQyVtg' },
   { title: 'Listen to God today, before it is too late! 2', age: 'Streamed 1 day ago', id: 'alCtYqn4YpU' },
 ];
