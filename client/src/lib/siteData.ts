@@ -34,7 +34,7 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'night prayer meeting! 6', age: 'Streamed 6 hours ago', id: '-Y9DTHpxVB0' },
+  { title: 'night prayer meeting! 6', age: 'Streamed 11 hours ago', id: '-Y9DTHpxVB0' },
   { title: 'Les Quatre Principes Fondamentaux de la Vie Chretienne! 1', age: 'Streamed 1 day ago', id: 'rQZ6slyHtuk' },
   { title: 'Discipleship meeting! 6', age: 'Streamed 2 days ago', id: 'R72QgbeHCPE' },
   { title: 'La Sanctification! 19', age: 'Streamed 3 days ago', id: 'sIk8OOQyVtg' },
