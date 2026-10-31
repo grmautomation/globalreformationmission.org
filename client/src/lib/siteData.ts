@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
+  { title: 'la femme selon le coeur de Dieu! 39', age: 'Streamed 1 hour ago', id: 'nzTtx3u2x0Q' },
   { title: 'night prayer meeting! 6', age: 'Streamed 2 days ago', id: '-Y9DTHpxVB0' },
   { title: 'Les Quatre Principes Fondamentaux de la Vie Chretienne! 1', age: 'Streamed 3 days ago', id: 'rQZ6slyHtuk' },
   { title: 'Discipleship meeting! 6', age: 'Streamed 4 days ago', id: 'R72QgbeHCPE' },
-  { title: 'La Sanctification! 19', age: 'Streamed 5 days ago', id: 'sIk8OOQyVtg' },
 ];
 
 export const navItems = [
