@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Recevoir le royaume de cieux comme un petit enfant! 1', age: 'Streamed 15 hours ago', id: 'UwJfLhF3Th4' },
-  { title: 'Listen to God today, before it is too late! 3', age: 'Streamed 18 hours ago', id: 'hIVY6z7e5GQ' },
-  { title: 'la femme selon le coeur de Dieu! 39', age: 'Streamed 1 day ago', id: 'nzTtx3u2x0Q' },
-  { title: 'night prayer meeting! 6', age: 'Streamed 4 days ago', id: '-Y9DTHpxVB0' },
+  { title: 'Discipleship meeting! 7', age: 'Streamed less than an hour ago', id: 'wD6mkzNr7es' },
+  { title: 'Recevoir le royaume de cieux comme un petit enfant! 1', age: 'Streamed 1 day ago', id: 'UwJfLhF3Th4' },
+  { title: 'Listen to God today, before it is too late! 3', age: 'Streamed 1 day ago', id: 'hIVY6z7e5GQ' },
+  { title: 'la femme selon le coeur de Dieu! 39', age: 'Streamed 2 days ago', id: 'nzTtx3u2x0Q' },
 ];
 
 export const navItems = [
