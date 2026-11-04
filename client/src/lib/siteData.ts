@@ -34,7 +34,7 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Discipleship meeting! 7', age: 'Streamed 10 hours ago', id: 'wD6mkzNr7es' },
+  { title: 'Discipleship meeting! 7', age: 'Streamed 15 hours ago', id: 'wD6mkzNr7es' },
   { title: 'Recevoir le royaume de cieux comme un petit enfant! 1', age: 'Streamed 1 day ago', id: 'UwJfLhF3Th4' },
   { title: 'Listen to God today, before it is too late! 3', age: 'Streamed 1 day ago', id: 'hIVY6z7e5GQ' },
   { title: 'la femme selon le coeur de Dieu! 39', age: 'Streamed 2 days ago', id: 'nzTtx3u2x0Q' },
