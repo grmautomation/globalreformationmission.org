@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Discipleship meeting! 8', age: 'Streamed 1 hour ago', id: '3a2n5Y6LRz0' },
+  { title: 'les Quatres Principes Fondamentaux de la Vie Chretienne! 2', age: 'Streamed 1 hour ago', id: 'm7Wevrq0nW0' },
+  { title: 'Les Quatres Principes Fondamentaux de la Vie Chrétienne! 2', age: 'Streamed 1 hour ago', id: 'OQXtXJqtreY' },
+  { title: 'Discipleship meeting! 8', age: 'Streamed 10 hours ago', id: '3a2n5Y6LRz0' },
   { title: 'Recevoir le royaume de cieux comme un petit enfant! 2', age: 'Streamed 1 day ago', id: 'dqcL0JatfLw' },
-  { title: 'Listen to God today, before it is too late! 4', age: 'Streamed 1 day ago', id: 'hwGJiDImTo8' },
-  { title: 'Discipleship meeting! 7', age: 'Streamed 1 week ago', id: 'wD6mkzNr7es' },
 ];
 
 export const navItems = [
