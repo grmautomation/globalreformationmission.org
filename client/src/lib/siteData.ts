@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Night prayer meeting! 7', age: 'Streamed 4 hours ago', id: 'RN7-VpcX9D8' },
-  { title: 'les Quatres Principes Fondamentaux de la Vie Chretienne! 2', age: 'Streamed 19 hours ago', id: 'm7Wevrq0nW0' },
-  { title: 'Les Quatres Principes Fondamentaux de la Vie Chrétienne! 2', age: 'Streamed 19 hours ago', id: 'OQXtXJqtreY' },
-  { title: 'Discipleship meeting! 8', age: 'Streamed 1 day ago', id: '3a2n5Y6LRz0' },
+  { title: 'Night prayer meeting! 7', age: 'Streamed 1 hour ago', id: 'RN7-VpcX9D8' },
+  { title: 'les Quatres Principes Fondamentaux de la Vie Chretienne! 2', age: 'Streamed 1 day ago', id: 'm7Wevrq0nW0' },
+  { title: 'Les Quatres Principes Fondamentaux de la Vie Chrétienne! 2', age: 'Streamed 1 day ago', id: 'OQXtXJqtreY' },
+  { title: 'Discipleship meeting! 8', age: 'Streamed 2 days ago', id: '3a2n5Y6LRz0' },
 ];
 
 export const navItems = [
