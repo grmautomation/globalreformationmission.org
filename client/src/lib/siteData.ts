@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Night prayer! 8', age: 'Streamed 1 day ago', id: 'rcjXcU1fEnU' },
-  { title: 'Les quatres principes fondamentaux de la vie chretienne!', age: 'Streamed 2 days ago', id: 'Mu86yl5-DXw' },
-  { title: 'Global Reformation Mission is live!', age: 'Streamed 2 days ago', id: 'NcvBaSXAnV0' },
-  { title: 'Discipleship meeting! 9', age: 'Streamed 3 days ago', id: 'eMj_F3qwc-E' },
+  { title: 'Night prayer! 8', age: 'Streamed 2 days ago', id: 'rcjXcU1fEnU' },
+  { title: 'Les quatres principes fondamentaux de la vie chretienne!', age: 'Streamed 3 days ago', id: 'Mu86yl5-DXw' },
+  { title: 'Global Reformation Mission is live!', age: 'Streamed 3 days ago', id: 'NcvBaSXAnV0' },
+  { title: 'Discipleship meeting! 9', age: 'Streamed 4 days ago', id: 'eMj_F3qwc-E' },
 ];
 
 export const navItems = [
