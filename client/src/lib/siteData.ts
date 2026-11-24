@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Discipleship meeting! 10', age: 'Streamed 3 hours ago', id: 'Ap5hOmOL2OI' },
-  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 19 hours ago', id: 'UbQ60yZ-w7c' },
-  { title: 'Listen to God before it is too late! 6', age: 'Streamed 21 hours ago', id: 'tfZKFyxL_AA' },
-  { title: 'Night prayer! 8', age: 'Streamed 4 days ago', id: 'rcjXcU1fEnU' },
+  { title: 'Discipleship meeting! 10', age: 'Streamed 4 hours ago', id: 'Ap5hOmOL2OI' },
+  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 1 day ago', id: 'UbQ60yZ-w7c' },
+  { title: 'Listen to God before it is too late! 6', age: 'Streamed 1 day ago', id: 'tfZKFyxL_AA' },
+  { title: 'Night prayer! 8', age: 'Streamed 5 days ago', id: 'rcjXcU1fEnU' },
 ];
 
 export const navItems = [
