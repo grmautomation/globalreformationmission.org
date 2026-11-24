@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 8 hours ago', id: 'UbQ60yZ-w7c' },
-  { title: 'Listen to God before it is too late! 6', age: 'Streamed 10 hours ago', id: 'tfZKFyxL_AA' },
+  { title: 'Discipleship meeting! 10', age: 'Streamed 3 hours ago', id: 'Ap5hOmOL2OI' },
+  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 19 hours ago', id: 'UbQ60yZ-w7c' },
+  { title: 'Listen to God before it is too late! 6', age: 'Streamed 21 hours ago', id: 'tfZKFyxL_AA' },
   { title: 'Night prayer! 8', age: 'Streamed 4 days ago', id: 'rcjXcU1fEnU' },
-  { title: 'Les quatres principes fondamentaux de la vie chretienne!', age: 'Streamed 5 days ago', id: 'Mu86yl5-DXw' },
 ];
 
 export const navItems = [
