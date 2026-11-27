@@ -34,10 +34,10 @@ export const pathways = [
 ];
 
 export const videos = [
-  { title: 'Les quatres principes de la fondamentales de la vie chrétienne! 3', age: 'Streamed 1 day ago', id: 'CrE7x4cWFRI' },
-  { title: 'Les quatres principes fondamentaux de la vie chretienne! 3', age: 'Streamed 1 day ago', id: 'fcsFyOEkpj8' },
-  { title: 'Discipleship meeting! 10', age: 'Streamed 2 days ago', id: 'Ap5hOmOL2OI' },
-  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 3 days ago', id: 'UbQ60yZ-w7c' },
+  { title: 'Les quatres principes de la fondamentales de la vie chrétienne! 3', age: 'Streamed 2 days ago', id: 'CrE7x4cWFRI' },
+  { title: 'Les quatres principes fondamentaux de la vie chretienne! 3', age: 'Streamed 2 days ago', id: 'fcsFyOEkpj8' },
+  { title: 'Discipleship meeting! 10', age: 'Streamed 3 days ago', id: 'Ap5hOmOL2OI' },
+  { title: 'Recevoir le royaume de cieux comme un petit enfant! 4', age: 'Streamed 4 days ago', id: 'UbQ60yZ-w7c' },
 ];
 
 export const navItems = [
